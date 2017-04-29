@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -309,20 +311,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
 dt {
   font-weight: bold; }
 
@@ -484,6 +472,128 @@ a {
   text-align: right;
   width: 50%; }
 
+h1 {
+  width: 100%;
+  text-align: center; }
+
+body {
+  margin: 0; }
+
+* {
+  font-family: "Open Sans";
+  box-sizing: border-box; }
+
+.top-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em; }
+
+.menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.menu > li {
+  margin: 0 1rem; }
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#menu-toggle {
+  display: none; }
+
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px; }
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px; }
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px; }
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg); }
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0); }
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg); }
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: -ms-flexbox;
+    display: flex; }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .menu > li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222; }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444; } }
+
 .home {
   /* Every second span */
   /* ANIMATION */
@@ -576,11 +686,11 @@ a {
       display: inline-block;
       margin: 0; } }
   .home .page-hero {
-    height: 100px;
+    height: 200px;
     overflow: hidden;
     position: absolute;
     width: 100%;
-    top: 13rem;
+    top: 8rem;
     z-index: 10; }
   .home .page-hero h1 {
     animation: slideUp 0.75s 3s cubic-bezier(0.17, 0.88, 0.32, 1.27) both, fadeIn 0.25s 0.5s ease-in both;
@@ -602,6 +712,125 @@ a {
     opacity: 0; }
   to {
     opacity: 1; } }
+  .home .nav-list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .home .section-heading {
+    margin-left: 10%; }
+  .home h1 {
+    width: 100%;
+    text-align: center; }
+  .home body {
+    margin: 0; }
+  .home * {
+    font-family: "Open Sans";
+    box-sizing: border-box; }
+  .home .top-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em; }
+  .home .menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .home .menu > li {
+    margin: 0 1rem; }
+  .home .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  .home #menu-toggle {
+    display: none; }
+  .home .menu-button, .home .menu-button::before, .home .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px; }
+  .home .menu-button::before {
+    content: '';
+    margin-top: -8px; }
+  .home .menu-button::after {
+    content: '';
+    margin-top: 8px; }
+  .home #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg); }
+  .home #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0); }
+  .home #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg); }
+  @media (max-width: 700px) {
+    .home .menu-button-container {
+      display: -ms-flexbox;
+      display: flex; }
+    .home .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 100%;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+    .home #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .home #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .home .menu > li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222; }
+    .home .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444; } }
 
 /*--------------------------------------------------------------
 # Accessibility
