@@ -44,7 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -224,6 +223,83 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'latoblack';
+  src: url("../../fonts/lato-black-webfont.eot");
+  src: url("../../fonts/lato-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-black-webfont.woff2") format("woff2"), url("../../fonts/lato-black-webfont.woff") format("woff"), url("../../fonts/lato-black-webfont.svg#latoblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack_italic';
+  src: url("../../fonts/lato-blackitalic-webfont.eot");
+  src: url("../../fonts/lato-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-blackitalic-webfont.woff2") format("woff2"), url("../../fonts/lato-blackitalic-webfont.woff") format("woff"), url("../../fonts/lato-blackitalic-webfont.svg#latoblack_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold';
+  src: url("../../fonts/lato-bold-webfont.eot");
+  src: url("../../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-bold-webfont.woff2") format("woff2"), url("../../fonts/lato-bold-webfont.woff") format("woff"), url("../../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold_italic';
+  src: url("../../fonts/lato-bolditalic-webfont.eot");
+  src: url("../../fonts/lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/lato-bolditalic-webfont.woff") format("woff"), url("../../fonts/lato-bolditalic-webfont.svg#latobold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoheavy';
+  src: url("../../fonts/lato-heavy-webfont.eot");
+  src: url("../../fonts/lato-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-heavy-webfont.woff2") format("woff2"), url("../../fonts/lato-heavy-webfont.woff") format("woff"), url("../../fonts/lato-heavy-webfont.svg#latoheavy") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../../fonts/lato-italic-webfont.eot");
+  src: url("../../fonts/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-italic-webfont.woff2") format("woff2"), url("../../fonts/lato-italic-webfont.woff") format("woff"), url("../../fonts/lato-italic-webfont.svg#latoitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../../fonts/lato-light-webfont.eot");
+  src: url("../../fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-light-webfont.woff2") format("woff2"), url("../../fonts/lato-light-webfont.woff") format("woff"), url("../../fonts/lato-light-webfont.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight_italic';
+  src: url("../../fonts/lato-lightitalic-webfont.eot");
+  src: url("../../fonts/lato-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/lato-lightitalic-webfont.woff") format("woff"), url("../../fonts/lato-lightitalic-webfont.svg#latolight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latomedium';
+  src: url("../../fonts/lato-medium-webfont.eot");
+  src: url("../../fonts/lato-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-medium-webfont.woff2") format("woff2"), url("../../fonts/lato-medium-webfont.woff") format("woff"), url("../../fonts/lato-medium-webfont.svg#latomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latomedium_italic';
+  src: url("../../fonts/lato-mediumitalic-webfont.eot");
+  src: url("../../fonts/lato-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-mediumitalic-webfont.woff2") format("woff2"), url("../../fonts/lato-mediumitalic-webfont.woff") format("woff"), url("../../fonts/lato-mediumitalic-webfont.svg#latomedium_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../../fonts/lato-regular-webfont.eot");
+  src: url("../../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/lato-regular-webfont.woff2") format("woff2"), url("../../fonts/lato-regular-webfont.woff") format("woff"), url("../../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -472,17 +548,6 @@ a {
   text-align: right;
   width: 50%; }
 
-h1 {
-  width: 100%;
-  text-align: center; }
-
-body {
-  margin: 0; }
-
-* {
-  font-family: "Open Sans";
-  box-sizing: border-box; }
-
 .top-nav {
   display: -ms-flexbox;
   display: flex;
@@ -492,9 +557,11 @@ body {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background-color: #00BAF0;
-  background: linear-gradient(to left, #f46b45, #eea849);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgba(215, 40, 40, 0.9);
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   color: #FFF;
   height: 50px;
   padding: 1em; }
@@ -612,7 +679,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
     opacity: 0.5; }
   .home .video-background {
     height: 500px; }
@@ -627,12 +694,14 @@ body {
     text-align: center;
     perspective: 800px;
     min-width: 320px;
-    margin-top: 4em;
-    z-index: 10; }
+    margin-top: 12rem;
+    z-index: 10;
+    font-family: 'latobold';
+    text-shadow: 3px -1px 0px #000; }
   .home span {
     display: inline-block;
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     transform-origin: 50% 70%; }
   .home br {
     display: none; }
@@ -641,13 +710,13 @@ body {
   .home span:nth-child(1) {
     animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both; }
   .home span:nth-child(2) {
-    animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
-    padding-right: 20px; }
+    animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both; }
+  .home .edward:nth-child(2) {
+    animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both; }
   .home span:nth-child(3) {
     animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both; }
   .home span:nth-child(4) {
-    animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
-    padding-right: 20px; }
+    animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both; }
   .home span:nth-child(5) {
     animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
     display: inline-block; }
@@ -685,152 +754,45 @@ body {
     .home span:nth-child(5) {
       display: inline-block;
       margin: 0; } }
-  .home .page-hero {
-    height: 200px;
-    overflow: hidden;
+  .home .hero-paragraph-container {
     position: absolute;
-    width: 100%;
-    top: 8rem;
-    z-index: 10; }
-  .home .page-hero h1 {
-    animation: slideUp 0.75s 3s cubic-bezier(0.17, 0.88, 0.32, 1.27) both, fadeIn 0.25s 0.5s ease-in both;
-    padding: 0 20px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    color: #fff; }
+    z-index: 10;
+    top: 70%;
+    width: 100vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    animation: fadein 2s linear 3s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+    .home .hero-paragraph-container p {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      font-family: 'latomedium_italic'; }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(200%); }
-  to {
-    transform: translateY(-50%); } }
-
-@keyframes fadeIn {
+@keyframes fadein {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .home .nav-list {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
   .home .section-heading {
-    margin-left: 10%; }
-  .home h1 {
-    width: 100%;
-    text-align: center; }
-  .home body {
-    margin: 0; }
-  .home * {
-    font-family: "Open Sans";
-    box-sizing: border-box; }
-  .home .top-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
-    height: 50px;
-    padding: 1em; }
-  .home .menu {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-  .home .menu > li {
-    margin: 0 1rem; }
-  .home .menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-  .home #menu-toggle {
-    display: none; }
-  .home .menu-button, .home .menu-button::before, .home .menu-button::after {
-    display: block;
-    background-color: #fff;
+    padding-left: 10%;
+    background-color: red;
+    width: 80%;
+    margin-top: 0;
     position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px; }
-  .home .menu-button::before {
-    content: '';
-    margin-top: -8px; }
-  .home .menu-button::after {
-    content: '';
-    margin-top: 8px; }
-  .home #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg); }
-  .home #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0); }
-  .home #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg); }
-  @media (max-width: 700px) {
-    .home .menu-button-container {
-      display: -ms-flexbox;
-      display: flex; }
-    .home .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      width: 100%;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; }
-    .home #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-    .home #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-    .home .menu > li {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222; }
-    .home .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444; } }
+    top: 3rem; }
+  .home .about-section {
+    background: url("../../images/office-background.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+    position: relative; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -901,44 +863,6 @@ body {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Media
