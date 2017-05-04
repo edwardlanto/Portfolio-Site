@@ -21,21 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<section class="top-nav">
-			<div>
-			Logo Here
-			</div>
-				<input id="menu-toggle" type="checkbox" />
-				<label class='menu-button-container' for="menu-toggle">
-				<div class='menu-button'></div>
-			</label>
-			<ul class="menu">
-				<li>One</li>
-				<li>Two</li>
-				<li>Three</li>
-				<li>Four</li>
-				<li>Five</li>
-			</ul>
+				
   			</section>
 			</header><!-- #masthead -->
 

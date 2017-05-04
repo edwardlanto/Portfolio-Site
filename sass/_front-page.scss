@@ -4,6 +4,16 @@
         overflow-x:hidden;
     }
 
+    .hero-background{
+        background: url(../../images/hero-background.jpg) no-repeat center left;
+        background-size: 100%;
+        width: 100%;
+        height: 344px;
+        position: absolute;
+        top: 11rem;
+        filter: contrast(109%);
+    }
+
     .hero-container{
         width:100%;
         height:500px;
@@ -19,7 +29,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background:  linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+        // background:  linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
         opacity: 0.5;
     }
 
@@ -32,29 +42,25 @@
     }
 
 
-    .edward-header{
-        color:#fff;
-    }
-
     //Heading Animation
 
     .header-animation{
-        position:absolute;
+        position: absolute;
         width: 100%;
         margin: auto;
-        text-align: center;
+        text-align: left;
         perspective: 800px;
         min-width: 320px;
-        margin-top: 12rem;
-        z-index:10;
-        font-family:'latobold';
-        text-shadow: 3px -1px 0px #000;
+        margin-top: 1rem;
+        z-index: 1;
+        font-family: latobold;
+        margin-left: 10%;
     }
 
     span {
         display: inline-block;
-        color: #fff;
-        font-size: 2.5rem;
+        color: #000;
+        font-size: 1.9rem;
         transform-origin: 50% 70%;
     }
 
@@ -66,7 +72,7 @@
 /* Every second span */
 
     span:nth-child(2n) {
-        color: #fff;
+        color: #000;
     }
 
     span:nth-child(1) {
@@ -165,32 +171,33 @@
 //Text-animation
     .hero-paragraph-container{
         position: absolute;
-        z-index: 10;
-        top: 70%;
+        z-index: 2;
+        top: 15%;
         width: 100vw;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: center;
         justify-content: center;
-        animation: fadein 2s linear 3s;
-        animation-fill-mode:forwards;
-        opacity:0;
+        animation: b 1s linear 3s;
+        animation-fill-mode: forwards;
+        right: 10px;
             p{
-                font-size: 1.5rem;
-                text-align: center;
-                color: #fff;
-                text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+                font-size: 1.7rem;
+                text-align: left;
+                color:#98aee1;
                 text-transform:uppercase;
-                font-family:'latomedium_italic';
+                font-family:'latobold';
             }
     }
 
-    @keyframes fadein{
-        from{
-            opacity:0;
-        }
-        to{
-            opacity:1;
-        }
-    }
+    // @keyframes fadein{
+    //     from{
+    //         opacity:0;
+    //     }
+    //     to{
+    //         opacity:1;
+    //     }
+    // }
     
 
 //About Section

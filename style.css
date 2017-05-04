@@ -43,7 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -548,118 +547,56 @@ a {
   text-align: right;
   width: 50%; }
 
-.top-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  background-color: rgba(215, 40, 40, 0.9);
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  color: #FFF;
-  height: 50px;
-  padding: 1em; }
-
-.menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-.menu > li {
-  margin: 0 1rem; }
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-#menu-toggle {
-  display: none; }
-
-.menu-button, .menu-button::before, .menu-button::after {
-  display: block;
-  background-color: #fff;
+.hamburger-menu {
   position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px; }
+  top: 10rem;
+  left: 10%;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 60px;
+  cursor: pointer; }
 
-.menu-button::before {
-  content: '';
-  margin-top: -8px; }
+.bar,
+.bar:after,
+.bar:before {
+  width: 50px;
+  height: 5px; }
 
-.menu-button::after {
-  content: '';
-  margin-top: 8px; }
+.bar {
+  position: relative;
+  transform: translateY(13px);
+  background: #000;
+  transition: all 0ms 300ms; }
+  .bar.animate {
+    background: rgba(255, 255, 255, 0); }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg); }
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  background: #000;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0); }
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  background: #000;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg); }
+.bar.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: -ms-flexbox;
-    display: flex; }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 100%;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-  .menu > li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222; }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444; } }
+.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .home {
   /* Every second span */
@@ -667,6 +604,14 @@ a {
   /* RESPONSIVE STUFF */ }
   .home #page {
     overflow-x: hidden; }
+  .home .hero-background {
+    background: url(../../images/hero-background.jpg) no-repeat center left;
+    background-size: 100%;
+    width: 100%;
+    height: 344px;
+    position: absolute;
+    top: 11rem;
+    filter: contrast(109%); }
   .home .hero-container {
     width: 100%;
     height: 500px;
@@ -679,34 +624,31 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
     opacity: 0.5; }
   .home .video-background {
     height: 500px; }
   .home .menu-toggle {
     display: none; }
-  .home .edward-header {
-    color: #fff; }
   .home .header-animation {
     position: absolute;
     width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     perspective: 800px;
     min-width: 320px;
-    margin-top: 12rem;
-    z-index: 10;
-    font-family: 'latobold';
-    text-shadow: 3px -1px 0px #000; }
+    margin-top: 1rem;
+    z-index: 1;
+    font-family: latobold;
+    margin-left: 10%; }
   .home span {
     display: inline-block;
-    color: #fff;
-    font-size: 2.5rem;
+    color: #000;
+    font-size: 1.9rem;
     transform-origin: 50% 70%; }
   .home br {
     display: none; }
   .home span:nth-child(2n) {
-    color: #fff; }
+    color: #000; }
   .home span:nth-child(1) {
     animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both; }
   .home span:nth-child(2) {
@@ -756,29 +698,22 @@ a {
       margin: 0; } }
   .home .hero-paragraph-container {
     position: absolute;
-    z-index: 10;
-    top: 70%;
+    z-index: 2;
+    top: 15%;
     width: 100vw;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center;
-    animation: fadein 2s linear 3s;
+    justify-content: center;
+    animation: b 1s linear 3s;
     animation-fill-mode: forwards;
-    opacity: 0; }
+    right: 10px; }
     .home .hero-paragraph-container p {
-      font-size: 1.5rem;
-      text-align: center;
-      color: #fff;
-      text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      font-size: 1.7rem;
+      text-align: left;
+      color: #98aee1;
       text-transform: uppercase;
-      font-family: 'latomedium_italic'; }
-
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+      font-family: 'latobold'; }
   .home .section-heading {
     padding-left: 10%;
     background-color: red;

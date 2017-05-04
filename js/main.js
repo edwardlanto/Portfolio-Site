@@ -4,4 +4,8 @@
         $('.menu').toggle();
     })
 
+	$('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+	})
+
 })(jQuery)
