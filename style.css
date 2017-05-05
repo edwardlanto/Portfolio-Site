@@ -299,6 +299,13 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'abril';
+  src: url("../../fonts/abrilfatface-regular-webfont.eot");
+  src: url("../../fonts/abrilfatface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/abrilfatface-regular-webfont.woff") format("woff"), url("../../fonts/abrilfatface-regular-webfont.ttf") format("truetype"), url("../../fonts/abrilfatface-regular-webfont.svg#abril_fatfaceregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -547,15 +554,29 @@ a {
   text-align: right;
   width: 50%; }
 
-.hamburger-menu {
+.nav-list {
+  margin-left: 3%;
+  height: 10rem;
+  width: 67%;
+  text-transform: uppercase;
+  background: rgba(152, 174, 225, 0.3);
+  padding-left: 0;
   position: absolute;
-  top: 10rem;
-  left: 10%;
-  z-index: 100;
-  right: 0;
-  bottom: 0;
+  top: 15rem;
+  z-index: 4;
+  list-style: none;
+  display: none; }
+  .nav-list li {
+    border-bottom: 2px solid #fff;
+    width: 80%;
+    font-family: latoheavy;
+    color: #161515;
+    margin-left: 20px;
+    margin-top: 10px; }
+
+.hamburger-menu {
   width: 50px;
-  height: 60px;
+  height: 59px;
   cursor: pointer; }
 
 .bar,
@@ -571,6 +592,32 @@ a {
   transition: all 0ms 300ms; }
   .bar.animate {
     background: rgba(255, 255, 255, 0); }
+
+.menu-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 12rem;
+  z-index: 201;
+  left: 10%;
+  width: 200px;
+  -ms-flex-align: center;
+      align-items: center;
+  animation: fademenu 1.5s ease-in 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes fademenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.menu-container p {
+  margin-left: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-family: 'latomedium'; }
 
 .bar:before {
   content: "";
@@ -605,13 +652,14 @@ a {
   .home #page {
     overflow-x: hidden; }
   .home .hero-background {
-    background: url(../../images/hero-background.jpg) no-repeat center left;
+    background: url(../../images/hero-background.jpg) no-repeat 0;
     background-size: 100%;
     width: 100%;
-    height: 344px;
+    height: 95vh;
     position: absolute;
-    top: 11rem;
-    filter: contrast(109%); }
+    top: 12rem;
+    filter: contrast(109%);
+    box-shadow: inset 0 27px 14rem -2rem #fff; }
   .home .hero-container {
     width: 100%;
     height: 500px;
@@ -620,11 +668,6 @@ a {
       position: absolute;
       top: 8rem;
       z-index: 10; }
-  .home .hero-gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5; }
   .home .video-background {
     height: 500px; }
   .home .menu-toggle {
@@ -639,7 +682,7 @@ a {
     margin-top: 1rem;
     z-index: 1;
     font-family: latobold;
-    margin-left: 10%; }
+    margin-left: 5%; }
   .home span {
     display: inline-block;
     color: #000;
@@ -697,37 +740,53 @@ a {
       display: inline-block;
       margin: 0; } }
   .home .hero-paragraph-container {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 15%;
     width: 100vw;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: center;
-    justify-content: center;
-    animation: b 1s linear 3s;
+    animation: fadein 3.5s ease-in 1s;
     animation-fill-mode: forwards;
-    right: 10px; }
+    bottom: 25px;
+    opacity: 0; }
     .home .hero-paragraph-container p {
-      font-size: 1.7rem;
+      font-size: 2rem;
       text-align: left;
-      color: #98aee1;
+      color: #628ef5;
       text-transform: uppercase;
-      font-family: 'latobold'; }
-  .home .section-heading {
-    padding-left: 10%;
-    background-color: red;
-    width: 80%;
+      font-family: 'abril'; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .home .work-section {
+    z-index: 100;
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    position: relative;
+    margin-top: 15rem;
+    background-color: rgba(165, 213, 251, 0.41);
+    height: 400px; }
+  .home .section-header {
+    font-family: 'abril';
+    font-size: 3.5rem;
     margin-top: 0;
+    color: #000;
+    letter-spacing: 7px; }
+  .home .fadein {
+    opacity: 0; }
+  .home .header-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #205def;
     position: absolute;
-    top: 3rem; }
-  .home .about-section {
-    background: url("../../images/office-background.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin-top: 5px;
-    position: relative; }
+    top: 38px;
+    opacity: 0.6;
+    left: 20px;
+    z-index: -10; }
 
 /*--------------------------------------------------------------
 # Accessibility

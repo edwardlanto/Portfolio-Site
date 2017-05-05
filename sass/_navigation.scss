@@ -137,15 +137,31 @@ $bar-width: 50px;
 $bar-height: 5px;
 $bar-spacing: 13px;
 
+.nav-list{
+	  margin-left: 3%;
+    height: 10rem;
+    width: 67%;
+    text-transform: uppercase;
+    background: rgba(152, 174, 225, 0.3);
+    padding-left: 0;
+    position: absolute;
+    top: 15rem;
+    z-index: 4;
+    list-style: none;
+		display:none;
+		li{
+				border-bottom: 2px solid #fff;
+				width: 80%;
+				font-family: latoheavy;
+				color: #161515;
+				margin-left:20px;
+				margin-top:10px;
+			}
+}
+
 .hamburger-menu {
-	position: absolute;
-  top: 10rem;
-  left: 10%;
-	z-index:100;
-  right: 0;
-  bottom: 0;
   width: 50px;
-  height: 60px;
+  height: 59px;
   cursor: pointer;
 }
 
@@ -165,6 +181,37 @@ $bar-spacing: 13px;
   &.animate {
     background: rgba(255, 255, 255, 0); 
   }
+}
+
+.menu-wrapper{
+	display: flex;
+    position: absolute;
+    top: 12rem;
+    z-index: 201;
+    left: 10%;
+	width: 200px;
+    align-items: center;
+	animation: fademenu 1.5s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+ @keyframes fademenu{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+
+.menu-container{
+	p{
+		margin-left: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+		margin-top: 0;
+		font-family:'latomedium';
+	}
 }
 
 .bar:before {

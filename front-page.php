@@ -26,18 +26,29 @@ get_header(); ?>
 						<span class="welcome">T</span>
 						<span class="welcome">O</span>
 					</div>
+					<div class="hero-paragraph-container">
+						<p>Web Developer</p>
+					</div>
   				</div><!--header-animation-->
-				<div class="hero-paragraph-container">
-					<p>Web Developer</p>
-				</div>
-				<div class="hamburger-menu">
-		  			<div class="bar"></div>	
-				</div>
-				<div class="hero-gradient"></div>
+				<div class="menu-wrapper">
+					<div class="hamburger-menu">
+						<div class="bar"></div>	
+					</div><!--hamburger-menu-->
+					<div class="menu-container">
+						<p>Menu</p>
+					</div><!--menu-container-->
+				</div><!--menu-wrapper-->
+				<ul class="nav-list">
+					<li>Work</li>
+ 					<li>About</li>
+ 					<li>Services</li>
+ 					<li>Contact</li>
+ 				</ul>
 				<div class="hero-background"></div>
     		</section>
-			<section class="about-section">
-				<h2 class="section-heading">About Me</h2>
+			<section class="work-section">
+				<h2 class="section-header fadein">Work</h2>
+				<div class="header-bar"></div>
 			</section>
 
 		</main><!-- #main -->
