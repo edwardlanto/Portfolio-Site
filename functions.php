@@ -87,11 +87,9 @@ function portfolio_script() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
-	// wp_enqueue_script( 'true-festival-flickity', get_template_directory_uri() . '/build/js/flickity.pkgd.min.js', array('jquery'), '20130115', true );
+	wp_enqueue_script( 'portfolio-flickity', get_template_directory_uri() . '/build/js/flickity.pkgd.min.js', array('jquery'), '20130115', true );
 
-	wp_enqueue_script( 'true-festival-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20130115', true);
-
-	// wp_enqueue_script( 'true-festival-slider', get_template_directory_uri() . '/build/js/slider.min.js', array('jquery'), '20130115', true);
+	wp_enqueue_script( 'portfolio-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20130115', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -100,6 +98,7 @@ function portfolio_script() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_script' );
+
 
 /**
  * Custom template tags for this theme.

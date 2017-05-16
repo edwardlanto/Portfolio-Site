@@ -49,6 +49,21 @@ get_header(); ?>
 			<section class="work-section">
 				<h2 class="section-header fadein">Work</h2>
 				<div class="header-bar"></div>
+				<ul class="main-carousel">
+					<?php
+						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => -1));
+					?>
+                	<?php 
+                    	while ( $loop -> have_posts() ) : $loop -> the_post(); 
+                	?> 
+					<li class="carousel-cell">
+						<?php the_post_thumbnail('full'); ?>
+						<p class="project-title"><?php the_title(); ?></p>
+					</li>
+					<?php 
+                    endwhile; 
+                ?>
+				</ul>
 			</section>
 
 		</main><!-- #main -->
