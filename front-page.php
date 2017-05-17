@@ -62,7 +62,7 @@ get_header(); ?>
 						</div>
 						<p class="project-title"><?php the_title(); ?></p>
 						<div class="project-hover">
-							<p>Vestibulum aliquam ipsum sed luctus volutpat. 
+							<p class="project-content">Vestibulum aliquam ipsum sed luctus volutpat. 
 							Praesent dignissim lobortis leo, sit amet tristique 
 							mauris ultrices eu. Sed
 							</p>
@@ -72,6 +72,7 @@ get_header(); ?>
                     endwhile; 
                 ?>
 				</ul>
+				<a href="#" class="portfolio-button">View Portfolio</a>
 			</section>
 			<section class="about-section">
 				<h2 class="section-header fadein">Who Am I</h2>
@@ -91,8 +92,20 @@ get_header(); ?>
 				</div>			
 			</section>
 			<section class="expertise-section">
-				<h2 class="section-header fadein">Expertise</h2>
+				<h2 class="section-header fadein expertise-header">Expertise</h2>
 				<div class="header-bar"></div>
+				<div class="logo-container">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+					<h2>Design</h2>
+				</div>
+				<div class="logo-container">
+					<i class="fa fa-wordpress" aria-hidden="true"></i>
+					<h2>Design</h2>
+				</div>
+				<div class="logo-container">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					<h2>Design</h2>
+				</div>
 
 			</section>
 

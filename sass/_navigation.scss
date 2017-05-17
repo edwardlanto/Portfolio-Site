@@ -175,7 +175,7 @@ $bar-spacing: 13px;
 .bar {
 	position: relative;
 	transform: translateY($bar-spacing);
-	background: #000;
+	background: #FDCD3B;
 	transition: all 0ms 300ms;
   
   &.animate {
@@ -211,7 +211,7 @@ $bar-spacing: 13px;
     	text-transform: uppercase;
 		margin-top: 0;
 		font-family:'latobold';
-		color:#fff;
+		color:#FDCD3B;
    		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 	}
 }
@@ -221,7 +221,7 @@ $bar-spacing: 13px;
 	position: absolute;
 	left: 0;
 	bottom: $bar-spacing;
-	background: #000;
+	background: #FDCD3B;
 	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -230,7 +230,7 @@ $bar-spacing: 13px;
 	position: absolute;
 	left: 0;
 	top: $bar-spacing;
-	background: #000;
+	background: #FDCD3B;
 	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 

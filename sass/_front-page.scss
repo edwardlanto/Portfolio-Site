@@ -229,20 +229,21 @@
 
 
     .project-title{
-        text-transform:uppercase;
-        background-color: #a2a2a2;
-        width:230px;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.7);
+        width: 230px;
         position: absolute;
-        top: 75%;
-        font-family:'abril';
-        color:#fff;
-        z-index:100;
+        top: 55%;
+        font-family: abril;
+        color: #fdcd3b;
+        z-index: 100;
+        transition:background-color 0.4s linear;
 
     }
 
     .project-image{
         img{
-            height:210px;
+            height:180px;
         }
     }
 
@@ -254,9 +255,16 @@
             }
     }
 
+    .project-item{
+        cursor:pointer;
+    }
+
     .project-item:hover{
         .project-hover{
             height:100%;
+        }
+        .project-title{
+            background-color:#fff;
         }
     }
 
@@ -267,21 +275,27 @@
         height: 0;
         transition: height 0.4s ease-in-out;
         width:100%;
+        padding:0 1rem;
     }
 
     //About Section
 
-    .about-section{
+    .about-section, .expertise-section{
         position:relative;
         height:auto;
         margin-top:3rem;
+    }
+
+    .project-content{
+        color:#fff;
+        font-family:montserrat_alternatesXLt;
     }
         
     .about-background{
         background:url("../../images/responsive-background.jpg")no-repeat;
         background-size:contain;
         width:100vw;
-        height:400px;
+        height:auto;
         position:relative;
         z-index: -2;
     }
@@ -305,6 +319,35 @@
         color:#fff;
         font-family:montserratextralight;
         padding: 1rem 0;
+    }
+
+    //Expertise Section
+
+    .expertise-header{
+        margin-top: 5rem;
+    }
+
+    .logo-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        i{
+            color:#fdcd3b;
+            font-size:4rem;
+        }
+        h2{
+            margin-top:0;
+            text-transform:uppercase;
+            font-family:'latobold';
+        }
+    }
+
+    .portfolio-button{
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid #fdcd3b;
+        padding: 0.5rem 2rem;
+        z-index:100;
     }
 
     
