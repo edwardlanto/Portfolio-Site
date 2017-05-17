@@ -26,6 +26,12 @@ blockquote, q {
 	}
 }
 
+ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;

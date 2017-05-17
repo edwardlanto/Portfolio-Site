@@ -16,5 +16,6 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
+		<!--<script src="../js/lightbox.js"></script>-->
 	</body>
 </html>

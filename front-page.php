@@ -49,21 +49,51 @@ get_header(); ?>
 			<section class="work-section">
 				<h2 class="section-header fadein">Work</h2>
 				<div class="header-bar"></div>
-				<ul class="main-carousel">
+				<ul class="project-list">
 					<?php
-						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => -1));
+						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
 					?>
                 	<?php 
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
                 	?> 
-					<li class="carousel-cell">
-						<?php the_post_thumbnail('full'); ?>
+					<li class="project-item">
+						<div class="project-image">
+							<?php the_post_thumbnail('full'); ?>
+						</div>
 						<p class="project-title"><?php the_title(); ?></p>
+						<div class="project-hover">
+							<p>Vestibulum aliquam ipsum sed luctus volutpat. 
+							Praesent dignissim lobortis leo, sit amet tristique 
+							mauris ultrices eu. Sed
+							</p>
+						</div>
 					</li>
 					<?php 
                     endwhile; 
                 ?>
 				</ul>
+			</section>
+			<section class="about-section">
+				<h2 class="section-header fadein">Who Am I</h2>
+				<div class="header-bar"></div>
+				<div class="about-background">
+						<p class="about-text">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
+							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
+							augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
+							mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
+							pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
+							arcu tristique. Aliquam faucibus rhoncus condimentum. Vivamus ut volutpat nisl. 
+							In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat. 
+							Praesent dignissim lobortis leo, sit amet tristique mauris ultrices eu. Sed 
+							est diam, tristique sit amet rhoncus vitae, mollis at odio.
+							<div class="text-gradient"></div>
+						</p>
+				</div>			
+			</section>
+			<section class="expertise-section">
+				<h2 class="section-header fadein">Expertise</h2>
+				<div class="header-bar"></div>
+
 			</section>
 
 		</main><!-- #main -->

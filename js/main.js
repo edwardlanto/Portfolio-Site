@@ -24,10 +24,14 @@
     });
 
     $('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
+        cellAlign: 'left',
+        contain: true
+    });
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 
 
 })(jQuery)

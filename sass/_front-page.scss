@@ -8,16 +8,15 @@
         background: url(../../images/hero-background.jpg) no-repeat 0;
         background-size: 100%;
         width: 100%;
-        height: 95vh;
+        height: 455px;
         position: absolute;
-        top: 12rem;
         filter: contrast(109%);
         box-shadow: inset 0 27px 14rem -2rem #fff;
     }
 
     .hero-container{
         width:100%;
-        height:500px;
+        height:400px;
         position:relative;
             .animation-paragraph-container{
                 position:absolute;
@@ -44,7 +43,6 @@
         text-align: left;
         perspective: 800px;
         min-width: 320px;
-        margin-top: 1rem;
         z-index: 1;
         font-family: latobold;
         margin-left: 5%;
@@ -193,51 +191,121 @@
 
 //Work Section
 
-.work-section{
-    z-index: 100;
-    position: relative;
-    top: 5rem;
-    text-align: center;
-    position:relative;
-    margin-top:-1rem;
-    background-color: rgba(165, 213, 251, 0.41);
-    height:400px;
-}
+    .work-section{
+        z-index: 100;
+        position: relative;
+        text-align: center;
+        position:relative;
+        margin-top:2rem;
+        height:auto;
+    }
 
 
-.section-header{
-    font-family:'abril';
-    font-size: 3.5rem;
-    margin-top: 0;
-    color: #000;
-    letter-spacing:7px;
-}
+    .section-header{
+        font-family:'abril';
+        font-size: 3rem;
+        margin-top: 0;
+        color: #000;
+        letter-spacing:7px;
+        text-align:center;
+    }
 
-.fadein{
-    opacity:0;
-}
+    .fadein{
+        opacity:0;
+    }
 
-.header-bar{
-    width: 200px;
-    height: 20px;
-    background-color: #205def;
-    position: absolute;
-    top: 38px;
-    opacity: 0.6;
-    left: 20px;
-    z-index: -10;
-}
+    .header-bar{
+        width: 200px;
+        height: 20px;
+        background-color: #205def;
+        position: absolute;
+        top: 38px;
+        opacity: 0.6;
+        left: 20px;
+        z-index: -10;
+    }
 
-.main-carousel{
-    padding:0;
-    margin:0;
-}
+    //Project Slider
 
-.carousel-cell{
-    width:100vw;
-    max-height:200px;
-}
-    
+
+    .project-title{
+        text-transform:uppercase;
+        background-color: #a2a2a2;
+        width:230px;
+        position: absolute;
+        top: 75%;
+        font-family:'abril';
+        color:#fff;
+        z-index:100;
+
+    }
+
+    .project-image{
+        img{
+            height:210px;
+        }
+    }
+
+    .project-list{
+        padding:0 1rem;
+        overflow-y: hidden;
+            li{
+                position:relative;
+            }
+    }
+
+    .project-item:hover{
+        .project-hover{
+            height:100%;
+        }
+    }
+
+    .project-hover{
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8);
+        height: 0;
+        transition: height 0.4s ease-in-out;
+        width:100%;
+    }
+
+    //About Section
+
+    .about-section{
+        position:relative;
+        height:auto;
+        margin-top:3rem;
+    }
+        
+    .about-background{
+        background:url("../../images/responsive-background.jpg")no-repeat;
+        background-size:contain;
+        width:100vw;
+        height:400px;
+        position:relative;
+        z-index: -2;
+    }
+
+    .text-gradient{
+        background-color: #000;
+        width: 95vw;
+        height: 105%;
+        opacity: .7;
+        position: absolute;
+        top: 4rem;
+        max-height: 555px;
+        z-index:-1;
+    }
+
+    .about-text{
+        position: relative;
+        top: 4rem;
+        margin-left: 1rem;
+        width:87vw;
+        color:#fff;
+        font-family:montserratextralight;
+        padding: 1rem 0;
+    }
 
     
 
