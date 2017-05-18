@@ -932,7 +932,9 @@ a {
   text-align: center;
   position: relative;
   text-shadow: -2px 0px 4px #000;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff; }
 
 .home .fadein {
   opacity: 0; }
@@ -949,7 +951,7 @@ a {
 
 .home .project-title {
   text-transform: uppercase;
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 55%;
   font-family: abril;
@@ -1058,9 +1060,19 @@ a {
 .home .portfolio-button {
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #fdcd3b;
+  border: 2px solid #fff;
   padding: 0.5rem 2rem;
-  z-index: 100; }
+  z-index: 100;
+  position: relative;
+  bottom: 1.5rem;
+  color: #fdcd3b;
+  font-family: 'latobold';
+  transition: all 0.5s ease-in-out; }
+  .home .portfolio-button:hover {
+    border-radius: 25px;
+    background-color: #fff;
+    border: 2px solid #fdcd3b;
+    color: #000; }
 
 /*--------------------------------------------------------------
 # Accessibility
