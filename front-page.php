@@ -10,45 +10,35 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="hero-container">
-				<div class="header-animation">
-					<div>
-						<span class="welcome">E</span>
-						<span class="welcome">D</span>
-						<span class="welcome">W</span>
-						<span class="welcome">A</span>
-						<span class="welcome">R</span>
-						<span class="welcome">D</span>
+				<div class="hero-background">
+					<div class="header-animation">
+					<div class="typing-container">
+						<span class="element"></span>
+						<span class="element2"></span>
 					</div>
-					<div>
-						<span class="welcome">L</span>
-						<span class="welcome">A</span>
-						<span class="welcome">N</span>
-						<span class="welcome">T</span>
-						<span class="welcome">O</span>
-					</div>
-					<div class="hero-paragraph-container">
-						<p>Web Developer</p>
-					</div>
-  				</div><!--header-animation-->
-				<div class="menu-wrapper">
-					<div class="hamburger-menu">
-						<div class="bar"></div>	
-					</div><!--hamburger-menu-->
-					<div class="menu-container">
-						<p>Menu</p>
-					</div><!--menu-container-->
-				</div><!--menu-wrapper-->
-				<ul class="nav-list">
-					<li>Work</li>
- 					<li>About</li>
- 					<li>Services</li>
- 					<li>Contact</li>
- 				</ul>
-				<div class="hero-background"></div>
+						<div class="menu-container">
+							<div class="menu-wrapper">
+								<div class="hamburger-menu">
+									<div class="bar"></div><!--empty-bar-->
+								</div><!--hamburger-menu-->
+								<div class="menu-container">
+									<p>Menu</p>
+								</div><!--menu-container-->
+								<ul class="nav-list">
+									<li>Work</li>
+									<li>About</li>
+									<li>Services</li>
+									<li>Contact</li>
+								</ul>
+							</div><!--menu-wrapper-->
+						</div>
+					</div><!--header-animation-->
+				</div><!--hero-background-->
     		</section>
 			<section class="work-section">
-				<h2 class="section-header fadein">Work</h2>
-				<div class="header-bar"></div>
+				<h2 class="section-header fadein">Work
+					<div class="header-bar"></div>
+				</h2>
 				<ul class="project-list">
 					<?php
 						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
@@ -57,9 +47,10 @@ get_header(); ?>
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
                 	?> 
 					<li class="project-item">
+						<div class="project-gradient"></div>
 						<div class="project-image">
 							<?php the_post_thumbnail('full'); ?>
-						</div>
+						</div><!--project-image-->
 						<p class="project-title"><?php the_title(); ?></p>
 						<div class="project-hover">
 							<p class="project-content">Vestibulum aliquam ipsum sed luctus volutpat. 
