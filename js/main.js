@@ -34,7 +34,7 @@
         loop: false,
         backDelay: 500,
         typeSpeed: 40,
-        strings: ["Hi, I'm Edward. I Design and Create ^1000 "]
+        strings: ["Hi, I'm Edward. I Develop and build ^1000 "]
      });
      
      $(".element2").typed({
@@ -42,7 +42,7 @@
         startDelay:0,
         backDelay: 500,
         typeSpeed: 40,
-        strings: ["Landing<br> Pages ^1000", "Responsive<br> Websites ^1000", "UI Designs ^1000", "Wordpress<br> Themes ^1000"]
+        strings: ["Landing<br> Pages ^1000", "Responsive<br> Websites ^1000", "UI <br>Designs ^1000", "Wordpress<br> Themes ^1000"]
      });
      
      AOS.init({

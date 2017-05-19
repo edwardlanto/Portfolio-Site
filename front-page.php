@@ -31,8 +31,32 @@ get_header(); ?>
 									<li>Contact</li>
 								</ul>
 							</div><!--menu-wrapper-->
-						</div>
+						</div><!--menu-container-->
 					</div><!--header-animation-->
+					<ul class="social-media-container">
+				<li>
+					<a href="#" class="icon-button twitter">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<span></span>
+					</a>
+				</li>
+				</li>
+					<a href="#" class="icon-button facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<span></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon-button google-plus envelope-icon">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<span></span>
+					</a>
+				</li>
+				<a href="#" class="icon-button pinterest github">
+					<i class="fa fa-github-square" aria-hidden="true"></i>
+					<span></span>
+				</a>
+			</ul>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section">
@@ -109,7 +133,6 @@ get_header(); ?>
 						mi sit amet elit venenatis luctus.</p>
 					</div>
 				</div>
-
 			</section>
 
 		</main><!-- #main -->
