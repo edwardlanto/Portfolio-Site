@@ -93,6 +93,9 @@ function portfolio_script() {
 
 	wp_enqueue_script( 'typed-portfolio', get_template_directory_uri() . '/build/js/typed.min.js', array('jquery'), true);
 
+	wp_enqueue_script( 'aos-portfolio', get_template_directory_uri() . '/build/js/aos.min.js', array('jquery'), true);
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

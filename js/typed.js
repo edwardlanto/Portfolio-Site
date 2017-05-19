@@ -454,7 +454,7 @@
 		// typing speed
 		typeSpeed: 0,
 		// time before typing starts
-		startDelay: 1000,
+		startDelay: 2000,
 		// backspacing speed
 		backSpeed: 0,
 		// shuffle the strings

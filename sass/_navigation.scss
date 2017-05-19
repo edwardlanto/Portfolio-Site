@@ -191,19 +191,9 @@ $bar-spacing: 13px;
     animation-fill-mode: forwards;
 	position: absolute;
     bottom: 12.5vh;
-	opacity:0;
 	left:0;
 
 }
-
- @keyframes fademenu{
-        from{
-            opacity:0;
-        }
-        to{
-            opacity:1;
-        }
-    }
 
 .menu-container{
 	p{
