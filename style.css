@@ -1618,14 +1618,16 @@ a {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .home html {
-    font-size: 2.5em; }
-  .home body {
-    background-color: #fff;
-    padding: 25px;
-    text-align: center; }
+  .home .social-media-container {
+    background-color: #353535;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .home .social-media-container li {
+      margin-bottom: 0.5rem; }
   .home .icon-button {
-    background-color: white;
+    background-color: transparent;
     border-radius: 2.6rem;
     cursor: pointer;
     display: inline-block;
@@ -1702,35 +1704,13 @@ a {
   .home .icon-button:hover .fa-youtube,
   .home .icon-button:hover .fa-pinterest {
     color: white; }
-  @media all and (max-width: 680px) {
-    .home {
-      /* Icons */ }
-      .home .icon-button {
-        border-radius: 1.6rem;
-        font-size: 0.8rem;
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem; }
-      .home .icon-button:hover span {
-        width: 1.6rem;
-        height: 1.6rem;
-        border-radius: 1.6rem;
-        margin: -0.8rem; }
-      .home .icon-button i {
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem; }
-      .home body {
-        padding: 10px; }
-      .home .pinterest {
-        display: none; } }
   .home .work-section {
     z-index: 100;
     position: relative;
     text-align: center;
     position: relative;
     height: auto;
-    background-color: #000; }
+    background-color: #353535; }
   .home .section-header {
     font-family: 'latoblack';
     font-size: 3rem;
@@ -1765,7 +1745,7 @@ a {
     .home .project-image img {
       height: 100%; }
   .home .project-gradient {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(76, 72, 72, 0.25) 0, rgba(117, 117, 152, 0.5));
     height: 100%;
     width: 100%;
     position: absolute;
@@ -1775,15 +1755,6 @@ a {
     margin-bottom: 3rem; }
     .home .project-list li {
       position: relative; }
-  .home .single-project-button {
-    font-size: 16px;
-    display: none;
-    text-decoration: none;
-    color: #fdcd3b;
-    position: absolute;
-    top: -2rem;
-    z-index: 100;
-    width: 100px; }
   .home .project-item {
     cursor: pointer; }
   .home .project-item:hover .project-hover {
@@ -1791,10 +1762,6 @@ a {
   .home .project-item:hover .project-title {
     background-color: #fff;
     left: 2px; }
-  .home .project-item:hover .single-project-button {
-    display: block;
-    text-decoration: none;
-    color: #fdcd3b; }
   .home .project-hover {
     position: absolute;
     bottom: 0;
@@ -1803,36 +1770,45 @@ a {
     transition: height 0.4s ease-in-out;
     width: 100%;
     padding: 0 1rem; }
+  .home .portfolio-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+    position: relative;
+    bottom: 1.5rem;
+    color: #fdcd3b;
+    font-family: 'latobold';
+    transition: all 0.3s ease-in-out; }
+    .home .portfolio-button:hover {
+      border-radius: 25px;
+      background-color: #fdcd3b;
+      color: #000;
+      border: none; }
   .home .about-section {
     position: relative;
-    height: 147vh;
+    height: 100vh;
     max-height: 40rem;
-    background-color: #000;
-    z-index: -10; }
+    background-color: #353535;
+    z-index: -10;
+    background: url("../../images/coffee-background.jpg") no-repeat;
+    background-size: cover; }
   .home .project-content {
     color: #fff;
     font-family: montserrat_alternatesXLt; }
-  .home .about-background {
-    background: url("../../images/coffee-background.jpg") no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: auto;
-    position: absolute;
-    z-index: -2;
-    height: 100vh;
-    max-height: 480px; }
   .home .text-gradient {
-    background-color: #000;
+    background-color: #353535;
     width: 95vw;
-    height: 105%;
-    opacity: .7;
+    height: 98%;
+    opacity: .7 !important;
     position: absolute;
-    top: 4rem;
     max-height: 555px;
-    z-index: -1; }
+    z-index: -1;
+    top: 0;
+    border: 2px solid #fdcd3b; }
   .home .about-text {
     position: relative;
-    top: 4rem;
     margin-left: 1rem;
     width: 87vw;
     color: #fff;
@@ -1864,22 +1840,23 @@ a {
       color: #fff;
       padding: 0 1rem;
       font-family: montserratextralight; }
-  .home .portfolio-button {
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid #fff;
-    padding: 0.5rem 2rem;
-    z-index: 100;
-    position: relative;
-    bottom: 1.5rem;
+  .home .contact-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/abstract-background.jpg") no-repeat center;
+    background-size: cover,cover;
+    height: 100vh; }
+  .home .contact-content-container p {
+    font-family: 'montserratthin';
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 0 1rem; }
+  .home .contact-heading {
     color: #fdcd3b;
+    text-align: center;
     font-family: 'latobold';
-    transition: all 0.3s ease-in-out; }
-    .home .portfolio-button:hover {
-      border-radius: 25px;
-      background-color: #fdcd3b;
-      color: #000;
-      border: none; }
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Accessibility

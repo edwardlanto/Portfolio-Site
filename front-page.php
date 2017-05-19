@@ -33,30 +33,6 @@ get_header(); ?>
 							</div><!--menu-wrapper-->
 						</div><!--menu-container-->
 					</div><!--header-animation-->
-					<ul class="social-media-container">
-				<li>
-					<a href="#" class="icon-button twitter">
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-						<span></span>
-					</a>
-				</li>
-				</li>
-					<a href="#" class="icon-button facebook">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<span></span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="icon-button google-plus envelope-icon">
-						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-						<span></span>
-					</a>
-				</li>
-				<a href="#" class="icon-button pinterest github">
-					<i class="fa fa-github-square" aria-hidden="true"></i>
-					<span></span>
-				</a>
-			</ul>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section">
@@ -69,7 +45,6 @@ get_header(); ?>
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
                 	?> 
 					<li class="project-item">
-						<a href="#" class="single-project-button">View Project</a>
 						<div class="project-gradient"></div>
 						<div class="project-image">
 							<?php the_post_thumbnail('full'); ?>
@@ -97,10 +72,8 @@ get_header(); ?>
 						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
 						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
-						arcu tristique. Aliquam faucibus rhoncus condimentum. Vivamus ut volutpat nisl. 
+						rhoncus condimentum. Vivamus ut volutpat nisl. 
 						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat. 
-						Praesent dignissim lobortis leo, sit amet tristique mauris ultrices eu. Sed 
-						est diam, tristique sit amet rhoncus vitae, mollis at odio.
 						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
 				</div>			
@@ -133,6 +106,20 @@ get_header(); ?>
 						mi sit amet elit venenatis luctus.</p>
 					</div>
 				</div>
+			</section>
+			<section class="contact-section">
+				<h2 class="section-header">Contact</h2>
+				<div class="contact-icon-content-wrapper">
+					<div class="contact-content-container">
+						<h2 class="contact-heading">Start a project<h2>
+						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
+							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
+							augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
+							mi sit amet elit venenatis luctus
+						</p>
+						<a href="#" class="contact-button">Get Started</a>
+					</div><!--contact-conten-container-->
+				</div><!--contact-content-wrapper-->
 			</section>
 
 		</main><!-- #main -->
