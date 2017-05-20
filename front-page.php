@@ -36,8 +36,8 @@ get_header(); ?>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section">
-				<h2 class="section-header" data-aos="fade-left" once="false">Work</h2>
-				<ul class="project-list" data-aos="fade-right" once="false">
+				<h2 class="section-header" data-aos="fade-left">Work</h2>
+				<ul class="project-list" data-aos="slide-up">
 					<?php
 						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
 					?>
@@ -62,8 +62,10 @@ get_header(); ?>
                     endwhile; 
                 ?>
 				</ul>
-				<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>" class="portfolio-button">View Portfolio</a>
 			</section>
+			<div class="main-button-container">
+				<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>" class="main-button portfolio-button">View Portfolio</a>
+			</div>
 			<section class="about-section">
 				<h2 class="section-header" data-aos="fade-left">Who Am I</h2>
 				<div class="about-background" data-aos="slide-up">
@@ -76,8 +78,11 @@ get_header(); ?>
 						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat. 
 						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
-				</div>			
+				</div>
 			</section>
+			<div class="main-button-container">
+				<a href="#" class="main-button">About Me</a>
+			</div>
 			<section class="expertise-section">
 				<h2 class="section-header fadein expertise-header" data-aos="fade-right">Expertise</h2>
 				<div class="full-logo-container">
@@ -110,7 +115,7 @@ get_header(); ?>
 			<section class="contact-section" aos-data="slide-up">
 				<h2 class="section-header" data-aos="fade-right">Contact</h2>
 				<div class="contact-icon-content-wrapper">
-					<div class="contact-content-container">
+					<div class="contact-content-container" data-aos="slide-up">
 						<h2 class="contact-heading">Start a project</h2>
 						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
@@ -118,18 +123,11 @@ get_header(); ?>
 							mi sit amet elit venenatis luctus
 						</p>
 						<div class="contact-button-container">
-							<a href="#" class="contact-button">Get Started</a>
+							<a href="#" class="main-button contact-button">Get Started</a>
 						</div>
 					</div><!--contact-conten-container-->
 				</div><!--contact-content-wrapper-->
 			</section>
-			<ul>
-			<li>
-				<a href="<?php echo get_template_directory_uri(); ?>/images/chair-background.jpg" data-fancybox class="fancybox">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/chair-background.jpg" alt="" />
-				</a>
-			</li>
-			</ul>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

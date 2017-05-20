@@ -58,4 +58,38 @@
     $(".fancybox:eq(2)").attr("data-caption", "Caption3")
 
 
+    $('.tlt').textillate({
+        in: {
+
+    // set the delay factor applied to each consecutive character
+        delayScale: 1.5,
+
+        // initialDelay: 20000,
+
+        // set the delay between each character
+        delay: 200,
+
+        // set to true to animate all the characters at the same time
+        sync: false,
+
+        // randomize the character sequence
+        // (note that shuffle doesn't make sense with sync = true)
+        shuffle: false,
+
+        // reverse the character sequence
+        // (note that reverse doesn't make sense with sync = true)
+        reverse: false,
+
+    },
+
+         // set the type of token to animate (available types: 'char' and 'word')
+  type: 'char'
+});
+
+    $('.tlt2').textillate({
+        initialDelay: 1200,
+        delay: 100,
+    })
+
+
 })(jQuery)

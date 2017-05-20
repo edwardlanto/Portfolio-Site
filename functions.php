@@ -97,6 +97,10 @@ function portfolio_script() {
 
 	wp_enqueue_script( 'fancybox-portfolio', get_template_directory_uri() . '/build/js/jquery.fancybox.min.js', array('jquery'), true);
 
+	wp_enqueue_script( 'lettering-portfolio', get_template_directory_uri() . '/build/js/jquery.lettering.min.js', array('jquery'), true);
+
+	wp_enqueue_script( 'textillate-portfolio', get_template_directory_uri() . '/build/js/jquery.textillate.min.js', array('jquery'), true);
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

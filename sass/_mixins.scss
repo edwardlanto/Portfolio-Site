@@ -19,4 +19,23 @@
 	box-shadow:0px 0px 3px #205def;
 }
 
+ @mixin main-button{
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 0.5rem 2rem;
+        z-index:100;
+        position: relative;
+        color:$main__color;
+        font-family:'latobold';
+        transition:all 0.3s linear;
+          &:hover{
+                border-radius:25px;
+                background-color:$main__color;
+                color:#000;
+                border:none;
+
+            }
+    }
+
 

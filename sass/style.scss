@@ -56,12 +56,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 @import "fonts";
 @import "typography";
+@import "global";
 @import "fancybox";
 @import "elements";
 @import "forms";
 @import "animations";
+@import "animate";
 @import "core";
 @import "easing";
+@import "gallery";
 @import "flickity";
 @import "navigation";
 @import "front-page";
