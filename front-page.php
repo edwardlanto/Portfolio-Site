@@ -62,7 +62,7 @@ get_header(); ?>
                     endwhile; 
                 ?>
 				</ul>
-				<a href="#" class="portfolio-button">View Portfolio</a>
+				<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>" class="portfolio-button">View Portfolio</a>
 			</section>
 			<section class="about-section">
 				<h2 class="section-header" data-aos="fade-left">Who Am I</h2>
@@ -107,21 +107,29 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-			<section class="contact-section">
-				<h2 class="section-header">Contact</h2>
+			<section class="contact-section" aos-data="slide-up">
+				<h2 class="section-header" data-aos="fade-right">Contact</h2>
 				<div class="contact-icon-content-wrapper">
 					<div class="contact-content-container">
-						<h2 class="contact-heading">Start a project<h2>
+						<h2 class="contact-heading">Start a project</h2>
 						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
 							augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 							mi sit amet elit venenatis luctus
 						</p>
-						<a href="#" class="contact-button">Get Started</a>
+						<div class="contact-button-container">
+							<a href="#" class="contact-button">Get Started</a>
+						</div>
 					</div><!--contact-conten-container-->
 				</div><!--contact-content-wrapper-->
 			</section>
-
+			<ul>
+			<li>
+				<a href="<?php echo get_template_directory_uri(); ?>/images/chair-background.jpg" data-fancybox class="fancybox">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/chair-background.jpg" alt="" />
+				</a>
+			</li>
+			</ul>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

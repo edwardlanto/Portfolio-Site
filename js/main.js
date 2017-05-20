@@ -51,6 +51,11 @@
       easing: 'ease-in-out',
     });
 
+    $(".fancybox").fancybox();
+
+    $(".fancybox:eq(0)").attr("data-caption", "Multipage, Wordpess theme that utilizes custom field suites and custom post types")
+    $(".fancybox:eq(1)").attr("data-caption", "Caption2")
+    $(".fancybox:eq(2)").attr("data-caption", "Caption3")
 
 
 })(jQuery)
