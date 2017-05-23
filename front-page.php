@@ -45,12 +45,11 @@ get_header(); ?>
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
                 	?> 
 					<li class="project-item">
-						<div class="project-gradient"></div>
+						<a href="<?php echo CFS()->get('project_link'); ?>" class="project-link">Link</a>
 						<div class="project-image">
 							<?php the_post_thumbnail('full'); ?>
 						</div><!--project-image-->
-						<p class="project-title"><?php the_title(); ?>
-						</p>
+						<p class="project-title"><?php the_title(); ?></p>
 						<div class="project-hover">
 							<p class="project-content">Vestibulum aliquam ipsum sed luctus volutpat. 
 							Praesent dignissim lobortis leo, sit amet tristique 
@@ -79,11 +78,14 @@ get_header(); ?>
 						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
 				</div>
-				<!--<h4 class="desktop-about-text">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
+				<h4 class="desktop-about-text">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
 						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
 						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
-						rhoncus condimentum. Vivamus ut volutpat</h4>-->
+						rhoncus condimentum. Vivamus ut volutpatus dolor, non interdum magna ligula a orci. Quisque sed 
+						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
+						pulvinar iaculis. Vestibulum venenatis us dolor, non interdum magna ligula a orci. Quisque sed 
+						mi sit amet elit venenatis luctus. </h4>
 			</section>
 			<div class="main-button-container">
 				<a href="#" class="main-button">About Me</a>

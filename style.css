@@ -3256,6 +3256,28 @@ a {
         .home .project-list li {
           width: 50vw;
           border: 2px solid #fff; } }
+  .home .project-link {
+    display: none; }
+    @media (min-width: 720px) {
+      .home .project-link {
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 300;
+        padding: .5rem;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        font-size: 3.5vw;
+        opacity: 0;
+        left: 20px;
+        text-transform: uppercase;
+        border-bottom: 3px solid white;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+        font-family: latobold_italic; }
+        .home .project-link:hover {
+          padding-bottom: 0;
+          color: #fdcd3b; } }
   .home .project-item {
     cursor: pointer; }
   .home .project-item:hover .project-hover {
@@ -3264,6 +3286,9 @@ a {
     background-color: #fff;
     left: 2px;
     text-shadow: none; }
+  .home .project-item:hover .project-link {
+    opacity: 1;
+    transition: all 0.7 ease-in-out; }
   .home .project-hover {
     position: absolute;
     bottom: 0;
@@ -3318,15 +3343,31 @@ a {
           width: 100%;
           content: "";
           background-repeat: no-repeat;
-          background: #fff;
+          background: #292929;
           top: 0;
           right: 0;
           bottom: 0;
           left: 0;
           transform-origin: top right;
-          transform: skewY(-30deg); }
+          transform: skewY(-20deg); }
         .home .about-section p {
           display: none; } }
+  .home .desktop-about-text {
+    display: none; }
+    @media (min-width: 720px) {
+      .home .desktop-about-text {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 200;
+        width: 88vh;
+        margin-right: 1rem;
+        font-family: latoregular;
+        height: 23vw;
+        max-height: 198px;
+        max-width: 555px;
+        margin-bottom: 0.5rem; } }
   .home .project-content {
     color: #fff;
     font-family: montserrat_alternatesXLt;
