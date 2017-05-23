@@ -170,9 +170,15 @@
         @include main-text-shadow;
         font-family:'latoblack';
             @include desktop{
-                font-size:7vw;
+                font-size:6.5vw;
 
             }
+    }
+
+    .element2{
+        @include desktop{
+            font-size:6vw;
+        }
     }
 
     .element2{
@@ -364,7 +370,7 @@
         width: 80%;
         position: absolute;
         top: 55%;
-        font-family: abril;
+        font-family:'latoheavy';
         color: #fdcd3b;
         z-index: 100;
         left: 2px;
@@ -374,11 +380,20 @@
         letter-spacing: 2px;
         text-align: left;
         padding-left: 0.5rem;
+            @include desktop{
+                bottom:0;
+                font-size:4vw;
+                font-family:'latoheavy';
+                top:auto;
+            }
     }
 
     .project-image{
         height: 61vw;
         position:relative;
+            @include desktop{
+                height:35vw;
+            }
         img{
             height:100%;
         }
@@ -395,8 +410,16 @@
 
     .project-list{ 
         overflow-y: hidden;
+            @include desktop{
+                display: flex;
+                flex-wrap: wrap;
+            }
             li{
                 position:relative;
+                    @include desktop{
+                        width:50vw;
+                        border:2px solid #fff;
+                    }
             }
     }
 
@@ -443,6 +466,34 @@
         z-index: -10;
         background:url("../../images/coffee-background.jpg")no-repeat;
         background-size:cover;
+            @include desktop{
+                background:url("../../images/desktop-about-background.jpg")no-repeat;
+                box-sizing: border-box;
+                width: 100%;
+                position: relative;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                height:400px;
+                    &:after{
+                        position:absolute;
+                        height:100%;
+                        width:100%;
+                        content:"";
+                        background-repeat:no-repeat;
+                        background:#fff;
+                        top:0;
+                        right:0;
+                        bottom:0;
+                        left:0;
+                        transform-origin:top right;
+                        transform:skewY(-30deg);
+
+                    }
+                    p{
+                        display:none;
+                    }
+            }
     }
 
     .project-content{
@@ -451,7 +502,7 @@
         font-size: 4vw;
         padding-top: 5vw;
             @include desktop{
-                color:red;
+                font-size:2.1vw;
             }
 
     }
@@ -473,6 +524,9 @@
         z-index:-1;
         top:0;
         border:2px solid $main__color;
+            @include desktop{
+                display:none;
+            }
     }
 
     .about-text{
@@ -482,6 +536,9 @@
         color:#fff;
         font-family:montserratextralight;
         padding: 1rem 0;
+            @include desktop{
+                display:none;
+            }
     }
 
     //Expertise Section

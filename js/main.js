@@ -7,7 +7,7 @@
 	$('.hamburger-menu').on('click', function(event) {
         event.preventDefault();
         $('.bar').toggleClass('animate');
-        $('.nav-list').toggle('slide').css({"display":"flex"});
+        $('.nav-list').css({"opacity":"1"}).toggle('slide').css({"display":"inherit"});
 	})
 
 

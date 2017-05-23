@@ -146,14 +146,31 @@ $bar-spacing: 13px;
     z-index: 4;
     list-style: none;
 	display:none;
+		@include desktop{
+			display:flex;
+			bottom:-3rem;
+		}
 		li{
 				border-bottom: 2px solid #fff;
-				width: 80%;
+				width: 100%;
 				font-family: latoheavy;
-				color: $main__color;
 				padding: 0 0.5rem;
 				margin-top:10px;
 				font-size: 4vw;
+					@include desktop{
+						border-bottom:none;
+					}
+					a{
+						color: $main__color;
+						text-decoration:none;
+							@include desktop{
+								color:#fff;
+								transition:all 0.4s ease-in-out;
+									&:hover{
+										color:$main__color;
+									}
+							}
+					}
 			}
 }
 
@@ -161,6 +178,9 @@ $bar-spacing: 13px;
   width: 50px;
   height: 59px;
   cursor: pointer;
+  	@include desktop{
+		  display:none;
+	  }
 }
 
 .bar,
@@ -204,6 +224,9 @@ $bar-spacing: 13px;
 		font-family:'latobold';
 		color:#fff;
 		@include main-text-shadow;
+			@include desktop{
+				display:none;
+			}
 	}
 }
 

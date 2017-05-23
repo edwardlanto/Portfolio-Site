@@ -26,16 +26,16 @@ get_header(); ?>
 								</div><!--menu-container-->
 								<ul class="nav-list">
 									<li><a href="#Work">Work</a></li>
-									<li><a href="About">About</a></li>
-									<li><a href="Expertise">Expertise</a></li>
-									<li><a href="Contact">Contact</a></li>
+									<li><a href="#About">About</a></li>
+									<li><a href="#Expertise">Expertise</a></li>
+									<li><a href="#Contact">Contact</a></li>
 								</ul>
 							</div><!--menu-wrapper-->
 						</div><!--menu-container-->
 					</div><!--header-animation-->
 				</div><!--hero-background-->
     		</section>
-			<section class="work-section">
+			<section class="work-section" id="Work">
 				<h2 class="section-header">Work</h2>
 				<ul class="project-list" data-aos="slide-up">
 					<?php
@@ -66,8 +66,8 @@ get_header(); ?>
 			<div class="main-button-container">
 				<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>" class="main-button portfolio-button">View Portfolio</a>
 			</div>
+			<h2 class="section-header" id="About">Who Am I</h2>
 			<section class="about-section">
-				<h2 class="section-header">Who Am I</h2>
 				<div class="about-background" data-aos="slide-up">
 					<p class="about-text" data-aos="fade-right" delay="10000">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
@@ -75,15 +75,20 @@ get_header(); ?>
 						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
 						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
 						rhoncus condimentum. Vivamus ut volutpat nisl. 
-						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat. 
+						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat.
 						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
 				</div>
+				<!--<h4 class="desktop-about-text">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
+						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
+						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
+						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
+						rhoncus condimentum. Vivamus ut volutpat</h4>-->
 			</section>
 			<div class="main-button-container">
 				<a href="#" class="main-button">About Me</a>
 			</div>
-			<section class="expertise-section">
+			<section class="expertise-section" id="Expertise">
 				<h2 class="section-header fadein expertise-header" data-aos="fade-right">Expertise</h2>
 				<div class="full-logo-container">
 					<div class="logo-container" data-aos="flip-left">
@@ -112,7 +117,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-			<section class="contact-section" aos-data="slide-up">
+			<section class="contact-section" aos-data="slide-up" id="Contact">
 				<h2 class="section-header" data-aos="fade-right">Contact</h2>
 				<div class="contact-icon-content-wrapper">
 					<div class="contact-content-container" data-aos="slide-up">

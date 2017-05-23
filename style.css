@@ -491,9 +491,12 @@ big {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/tech-background.jpg") no-repeat center;
+  background: #292929;
   background-size: cover,cover;
   border-top: 2px solid #fff; }
+  @media (min-width: 720px) {
+    .main-button-container {
+      height: 8rem; } }
 
 .fancybox-enabled {
   overflow: hidden; }
@@ -1101,7 +1104,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #292929;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -2922,19 +2925,38 @@ a {
   z-index: 4;
   list-style: none;
   display: none; }
+  @media (min-width: 720px) {
+    .nav-list {
+      display: -ms-flexbox;
+      display: flex;
+      bottom: -3rem; } }
   .nav-list li {
     border-bottom: 2px solid #fff;
-    width: 80%;
+    width: 100%;
     font-family: latoheavy;
-    color: #fdcd3b;
     padding: 0 0.5rem;
     margin-top: 10px;
     font-size: 4vw; }
+    @media (min-width: 720px) {
+      .nav-list li {
+        border-bottom: none; } }
+    .nav-list li a {
+      color: #fdcd3b;
+      text-decoration: none; }
+      @media (min-width: 720px) {
+        .nav-list li a {
+          color: #fff;
+          transition: all 0.4s ease-in-out; }
+          .nav-list li a:hover {
+            color: #fdcd3b; } }
 
 .hamburger-menu {
   width: 50px;
   height: 59px;
   cursor: pointer; }
+  @media (min-width: 720px) {
+    .hamburger-menu {
+      display: none; } }
 
 .bar,
 .bar:after,
@@ -2971,6 +2993,9 @@ a {
   font-family: 'latobold';
   color: #fff;
   text-shadow: 0px 0px 3px #205def; }
+  @media (min-width: 720px) {
+    .menu-container p {
+      display: none; } }
 
 .bar:before {
   content: "";
@@ -3063,7 +3088,10 @@ a {
     font-family: 'latoblack'; }
     @media (min-width: 720px) {
       .home .element, .home .element2 {
-        font-size: 7vw; } }
+        font-size: 6.5vw; } }
+  @media (min-width: 720px) {
+    .home .element2 {
+      font-size: 6vw; } }
   .home .element2 {
     display: -ms-flexbox;
     display: flex;
@@ -3190,7 +3218,7 @@ a {
     width: 80%;
     position: absolute;
     top: 55%;
-    font-family: abril;
+    font-family: 'latoheavy';
     color: #fdcd3b;
     z-index: 100;
     left: 2px;
@@ -3200,15 +3228,34 @@ a {
     letter-spacing: 2px;
     text-align: left;
     padding-left: 0.5rem; }
+    @media (min-width: 720px) {
+      .home .project-title {
+        bottom: 0;
+        font-size: 4vw;
+        font-family: 'latoheavy';
+        top: auto; } }
   .home .project-image {
     height: 61vw;
     position: relative; }
+    @media (min-width: 720px) {
+      .home .project-image {
+        height: 35vw; } }
     .home .project-image img {
       height: 100%; }
   .home .project-list {
     overflow-y: hidden; }
+    @media (min-width: 720px) {
+      .home .project-list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .home .project-list li {
       position: relative; }
+      @media (min-width: 720px) {
+        .home .project-list li {
+          width: 50vw;
+          border: 2px solid #fff; } }
   .home .project-item {
     cursor: pointer; }
   .home .project-item:hover .project-hover {
@@ -3255,6 +3302,31 @@ a {
     z-index: -10;
     background: url("../../images/coffee-background.jpg") no-repeat;
     background-size: cover; }
+    @media (min-width: 720px) {
+      .home .about-section {
+        background: url("../../images/desktop-about-background.jpg") no-repeat;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        height: 400px; }
+        .home .about-section:after {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background-repeat: no-repeat;
+          background: #fff;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          transform-origin: top right;
+          transform: skewY(-30deg); }
+        .home .about-section p {
+          display: none; } }
   .home .project-content {
     color: #fff;
     font-family: montserrat_alternatesXLt;
@@ -3262,7 +3334,7 @@ a {
     padding-top: 5vw; }
     @media (min-width: 720px) {
       .home .project-content {
-        color: red; } }
+        font-size: 2.1vw; } }
   .home .text-gradient {
     background-color: #353535;
     width: 95vw;
@@ -3273,6 +3345,9 @@ a {
     z-index: -1;
     top: 0;
     border: 2px solid #fdcd3b; }
+    @media (min-width: 720px) {
+      .home .text-gradient {
+        display: none; } }
   .home .about-text {
     position: relative;
     margin-left: 1rem;
@@ -3280,6 +3355,9 @@ a {
     color: #fff;
     font-family: montserratextralight;
     padding: 1rem 0; }
+    @media (min-width: 720px) {
+      .home .about-text {
+        display: none; } }
   .home .expertise-section {
     background-color: #000; }
   .home .full-logo-container {

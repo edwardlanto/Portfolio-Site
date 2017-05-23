@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100% ),
-    url('../../images/tech-background.jpg')no-repeat center;
+    background:#292929;
     background-size:cover,cover;
     border-top:2px solid #fff;
+        @include desktop{
+            height:8rem;
+        }
 }
