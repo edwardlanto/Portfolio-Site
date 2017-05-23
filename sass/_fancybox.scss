@@ -299,9 +299,6 @@
   right: -36px;
   background: transparent; }
 
-.fancybox-close-small:hover:after {
-  color: #555;
-  background: #eee; }
 
 /* Caption */
 .fancybox-caption-wrap {
@@ -364,8 +361,6 @@
 .fancybox-infobar__body, .fancybox-button {
   background: rgba(30, 30, 30, 0.6); }
 
-.fancybox-button:hover {
-  background: rgba(0, 0, 0, 0.8); }
 
 .fancybox-button::before,
 .fancybox-button::after {
@@ -605,6 +600,15 @@ li.fancybox-thumbs-loading {
 
 .fancybox-thumbs > ul > li.fancybox-thumbs-active:before {
   opacity: 1; }
+
+.fancybox-button{
+  box-shadow:none;
+  background-color:transparent;
+    &:hover{
+      box-shadow:none;
+      color:$main__color;
+    }
+}
 
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {

@@ -425,6 +425,115 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+.social-media-container {
+  background-color: #353535;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .social-media-container li {
+    margin-bottom: 0.5rem; }
+
+/* Wrapper */
+.icon-button {
+  background-color: transparent;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem; }
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s;
+  width: 0; }
+
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem; }
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10; }
+
+.twitter span {
+  background-color: #4099ff; }
+
+.facebook span {
+  background-color: #3B5998; }
+
+.google-plus span {
+  background-color: #db5a3c; }
+
+.tumblr span {
+  background-color: #34526f; }
+
+.instagram span {
+  background-color: #517fa4; }
+
+.youtube span {
+  background-color: #bb0000; }
+
+.pinterest span {
+  background-color: #cb2027; }
+
+.icon-button .icon-twitter {
+  color: #4099ff; }
+
+.icon-button .icon-facebook {
+  color: #3B5998; }
+
+.icon-button .fa-tumblr {
+  color: #34526f; }
+
+.icon-button .icon-google-plus {
+  color: #db5a3c; }
+
+.icon-button .fa-instagram {
+  color: #517fa4; }
+
+.icon-button .fa-youtube {
+  color: #bb0000; }
+
+.icon-button .fa-pinterest {
+  color: #cb2027; }
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -792,10 +901,6 @@ big {
   right: -36px;
   background: transparent; }
 
-.fancybox-close-small:hover:after {
-  color: #555;
-  background: #eee; }
-
 /* Caption */
 .fancybox-caption-wrap {
   position: absolute;
@@ -856,9 +961,6 @@ big {
 
 .fancybox-infobar__body, .fancybox-button {
   background: rgba(30, 30, 30, 0.6); }
-
-.fancybox-button:hover {
-  background: rgba(0, 0, 0, 0.8); }
 
 .fancybox-button::before,
 .fancybox-button::after {
@@ -1079,6 +1181,13 @@ li.fancybox-thumbs-loading {
 
 .fancybox-thumbs > ul > li.fancybox-thumbs-active:before {
   opacity: 1; }
+
+.fancybox-button {
+  box-shadow: none;
+  background-color: transparent; }
+  .fancybox-button:hover {
+    box-shadow: none;
+    color: #fdcd3b; }
 
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {
@@ -2718,6 +2827,70 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .post-type-archive-projects .gallery-paragraph .author {
     color: #fdcd3b; }
 
+.post-type-archive-projects .project-title {
+  font-family: 'latobold';
+  color: #fff;
+  font-size: 8vw;
+  text-align: center;
+  border-bottom: 2px solid #fdcd3b;
+  width: 19rem;
+  margin: 0 auto;
+  padding-bottom: 0.5rem; }
+  @media (min-width: 720px) {
+    .post-type-archive-projects .project-title {
+      font-size: 3vw; } }
+
+@media (min-width: 720px) {
+  .post-type-archive-projects .archive-project-item {
+    width: 45vw; } }
+
+.post-type-archive-projects .archive-project-item p {
+  word-break: break-all;
+  padding: 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: 'montserratlight';
+  text-align: center; }
+
+@media (min-width: 720px) {
+  .post-type-archive-projects .archive-project-item img {
+    border: 4px solid #fff; } }
+
+.post-type-archive-projects .archive-project-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 0.5rem 2rem;
+  z-index: 100;
+  position: relative;
+  color: #fff;
+  font-family: 'latobold';
+  transition: all 0.3s linear;
+  width: 14rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+  font-family: montserratmedium;
+  margin-bottom: 1.5rem; }
+  .post-type-archive-projects .archive-project-link:hover {
+    border-radius: 25px;
+    color: #fdcd3b;
+    width: 18rem;
+    letter-spacing: 2px;
+    border: 2px solid #fdcd3b; }
+
+@media (min-width: 720px) {
+  .post-type-archive-projects .project-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 2rem; } }
+
 /*! Flickity v2.0.6
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -3336,7 +3509,7 @@ a {
         padding: 20px;
         color: white;
         text-align: center;
-        height: 400px; }
+        height: 100vh; }
         .home .about-section:after {
           position: absolute;
           height: 100%;
@@ -3358,7 +3531,7 @@ a {
       .home .desktop-about-text {
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: 10rem;
         right: 0;
         z-index: 200;
         width: 88vh;
@@ -3425,6 +3598,9 @@ a {
       color: #fff;
       padding: 0 1rem;
       font-family: montserratextralight; }
+      @media (min-width: 720px) {
+        .home .logo-container p {
+          font-size: 2vw; } }
   .home .contact-section {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/abstract-background.jpg") no-repeat center;
     background-size: cover,cover;
@@ -3435,6 +3611,9 @@ a {
     margin-bottom: 0;
     text-align: center;
     padding: 0 1rem; }
+    @media (min-width: 720px) {
+      .home .contact-content-container p {
+        font-size: 2vw; } }
   .home .contact-heading {
     color: #fdcd3b;
     text-align: center;

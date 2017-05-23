@@ -32,5 +32,55 @@
             }
     }
 
+    .project-title{
+        font-family:'latobold';
+        color: #fff;
+        font-size: 8vw;
+        text-align: center;
+        border-bottom: 2px solid #fdcd3b;
+        width: 19rem;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+            @include desktop{
+                font-size:3vw;
+            }
+    }
+
+    .archive-project-item{
+        @include desktop{
+            width:45vw;
+        }
+        p{
+            word-break:break-all;
+            padding:1rem;
+            color: #fff;
+            letter-spacing: 2px;
+            font-family:'montserratlight';
+            text-align:center;
+        }
+    }
+
+    .archive-project-item{
+        @include desktop{
+            img{
+                border: 4px solid #fff;
+            }
+        }
+    }
+
+    .archive-project-link{
+        @include main-button;
+        font-family:montserratmedium;
+        margin-bottom:1.5rem;
+    }
+
+    .project-list{
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+    }
 
 }//Projects Wrapper

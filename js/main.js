@@ -106,5 +106,17 @@
         }
     }); //smooth-scroll function bracket
 
+    //Screen Width 800
+
+    function resize() {
+      if ($(window).width() > 720) {
+        alert('hello')
+        console.log('hello')
+      }
+
+    }
+
+    resize();
+
 
 })(jQuery)
