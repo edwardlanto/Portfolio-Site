@@ -25,10 +25,10 @@ get_header(); ?>
 									<p>Menu</p>
 								</div><!--menu-container-->
 								<ul class="nav-list">
-									<li>Work</li>
-									<li>About</li>
-									<li>Services</li>
-									<li>Contact</li>
+									<li><a href="#Work">Work</a></li>
+									<li><a href="About">About</a></li>
+									<li><a href="Expertise">Expertise</a></li>
+									<li><a href="Contact">Contact</a></li>
 								</ul>
 							</div><!--menu-wrapper-->
 						</div><!--menu-container-->
@@ -36,7 +36,7 @@ get_header(); ?>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section">
-				<h2 class="section-header" data-aos="fade-left">Work</h2>
+				<h2 class="section-header">Work</h2>
 				<ul class="project-list" data-aos="slide-up">
 					<?php
 						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
@@ -67,7 +67,7 @@ get_header(); ?>
 				<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>" class="main-button portfolio-button">View Portfolio</a>
 			</div>
 			<section class="about-section">
-				<h2 class="section-header" data-aos="fade-left">Who Am I</h2>
+				<h2 class="section-header">Who Am I</h2>
 				<div class="about-background" data-aos="slide-up">
 					<p class="about-text" data-aos="fade-right" delay="10000">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 

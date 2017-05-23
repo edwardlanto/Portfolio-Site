@@ -11,6 +11,11 @@
         width: 100%;
         height: 100vh;
         position: absolute;
+            @include desktop{
+                background:linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url(../../images/desktop-hero.jpg);
+                background-repeat: no-repeat,no-repeat;
+                background-size: cover,cover;
+            }
     }
 
     .hero-container{
@@ -145,6 +150,15 @@
     .typing-container{
         position:absolute;
         top:5rem;
+            @include desktop{
+                top:1rem;
+            }
+    }
+
+    .element{
+        @include desktop{
+            max-width:85vw;
+        }
     }
 
     .element, .element2 {
@@ -154,7 +168,11 @@
         transform-origin: 50% 70%;
         text-align:center;
         @include main-text-shadow;
-        font-family:'latoblack'
+        font-family:'latoblack';
+            @include desktop{
+                font-size:7vw;
+
+            }
     }
 
     .element2{
@@ -352,27 +370,27 @@
         left: 2px;
         transition: background-color .4s linear;
         font-size: 2rem;
-        text-shadow: 0 0 1px #fff;
+        text-shadow: 6px 10px 12px #000;
         letter-spacing: 2px;
         text-align: left;
         padding-left: 0.5rem;
     }
 
     .project-image{
-        height: 212px;
+        height: 61vw;
         position:relative;
         img{
             height:100%;
         }
     }
 
-    .project-gradient{
-        background: linear-gradient(180deg,rgba(76, 72, 72, 0.25) 0,rgba(117, 117, 152, 0.5));
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 100;
-    }
+    // .project-gradient{
+    //     background: linear-gradient(180deg,rgba(76, 72, 72, 0.25) 0,rgba(117, 117, 152, 0.5));
+    //     height: 100%;
+    //     width: 100%;
+    //     position: absolute;
+    //     z-index: 100;
+    // }
 
 
     .project-list{ 
@@ -393,6 +411,7 @@
         .project-title{
             background-color:#fff;
             left:2px;
+            text-shadow:none;
         }
     }
 
@@ -429,6 +448,12 @@
     .project-content{
         color:#fff;
         font-family:montserrat_alternatesXLt;
+        font-size: 4vw;
+        padding-top: 5vw;
+            @include desktop{
+                color:red;
+            }
+
     }
         
     // .about-background{

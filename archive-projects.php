@@ -28,6 +28,7 @@ get_header(); ?>
 					<p class="project-title">
 						<?php the_title(); ?>
 					</p>
+					<p><?php the_content(); ?></p>
 				</li>
 				<?php 
                 endwhile; 

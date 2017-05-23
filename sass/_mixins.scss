@@ -26,16 +26,27 @@
         padding: 0.5rem 2rem;
         z-index:100;
         position: relative;
-        color:$main__color;
+        color:#fff;
         font-family:'latobold';
         transition:all 0.3s linear;
+        width:14rem;
+        display:flex;   
+        justify-content:center;
+        margin:0 auto;
           &:hover{
                 border-radius:25px;
-                background-color:$main__color;
-                color:#000;
-                border:none;
+                color:$main__color;
+                width: 18rem;
+                letter-spacing:2px;
+                border:2px solid $main__color;
 
             }
     }
+
+@mixin desktop {
+    @media (min-width: $desktop_breakpoint) {
+	    @content;
+    }
+}
 
 
