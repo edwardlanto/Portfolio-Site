@@ -37,121 +37,15 @@
         display:none;
     }
 
-    //Slot Roll Animation
-
-    
-
-    // .content {
-    // position: absolute;
-    // top: 80%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // font-size: 35px;
-    // line-height: 40px;
-    // letter-spacing: 2px;
-    // color: #ecf0f1;
-    // height: 160px;
-    // overflow: hidden;
-    // }
-
-    // .visible {
-    // font-weight: 600;
-    // overflow: hidden;
-    // height: 40px;
-    // padding: 0 40px;
-    // &:before {
-    //     content: '[';
-    //     left: 0;
-    // }
-    // &:after {
-    //     content: ']';
-    //     right: 0;
-    // }
-    // &:after,
-    // &:before {
-    //     position: absolute;
-    //     top: 0;
-    //     color: #16a085;
-    //     font-size: 42px;
-    //     animation-name: opacity;
-    //     animation-duration: 1.5s;
-    //     animation-iteration-count: infinite;
-    // }
-    // }
-
-    // .slot-list {
-    // display: inline-block;
-    // margin: 0;
-    // text-align: left;
-    // list-style: none;
-    // animation-name: change;
-    // animation-duration: 15s;
-    // animation-iteration-count: infinite;
-    // li {
-    //     line-height: 40px;
-    //     margin: 0;
-    // }
-    // }
-
-    // @keyframes opacity {
-    // 0%,
-    // 100% {
-    //     opacity: 0;
-    // }
-    // 50% {
-    //     opacity: 1;
-    // }
-    // }
-
-    // @keyframes change {
-    // 0%,
-    // 12%,
-    // 100% {
-    //     transform: translateY(0);
-    // }
-    // 17%,
-    // 29% {
-    //     transform: translateY(-25%);
-    // }
-    // 34%,
-    // 46% {
-    //     transform: translateY(-50%);
-    // }
-    // 51%,
-    // 63% {
-    //     transform: translateY(-75%);
-    // }
-    // 68%,
-    // 80% {
-    //     transform: translateY(-50%);
-    // }
-    // 85%,
-    // 97% {
-    //     transform: translateY(-25%);
-    // }
-    // }
-
 
     //Heading Animation
 
-    .header-animation{
-        position: relative;
-        width: 100%;
-        margin: auto;
-        perspective: 800px;
-        z-index: 1;
-        font-family: latobold;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-    }
-
     .typing-container{
-        position:absolute;
-        top:5rem;
             @include desktop{
-                top:1rem;
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                align-items: center;
             }
     }
 
@@ -471,6 +365,9 @@
         padding-top:3rem;
             @include desktop{
                 max-width: 60vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
  
     }
@@ -491,6 +388,9 @@
             text-transform:uppercase;
             font-family:'latobold';
             color:#fff;
+                @include desktop{
+                    font-size:3vw;
+                }
         }
         p{
             text-align: center;
@@ -509,7 +409,6 @@
                 display:block;
                     img{
                         width:7rem;
-                        filter:grayscale(100%);
                     }
             }
     }
@@ -520,10 +419,13 @@
             flex-direction: row-reverse;
             align-items: center;
             margin-bottom: 2.5rem;
-            width: 20vw;
-            justify-content: space-around;
+            width: 30vw;
+            justify-content: space-between;
                 p{
                     color:#fff;
+                    font-family:latoheavy;
+                    font-size:3vw;
+                    letter-spacing:4px;
                 }
         }
     }
@@ -533,23 +435,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .language-text{
-        img{
-            transition:all 0.3s linear;
-        }
-    }
-
-    .language-list{
-            li:hover{
-                img{
-                    filter:grayscale(0%);
-                }
-            }
-            img{
-                transition:all 0.4s ease-in-out;
-            }
     }
 
 

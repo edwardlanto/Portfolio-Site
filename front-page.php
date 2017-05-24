@@ -11,11 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="hero-container" data-aos="zoom-in-up" delay="100">
 				<div class="hero-background">
-					<div class="header-animation">
-					<div class="typing-container">
-						<span class="element"></span>
-						<span class="element2"></span>
-					</div>
+						<div class="typing-container">
+							<span class="element"></span>
+							<span class="element2"></span>
+						</div><!--typing-container-->
 						<div class="menu-container">
 							<div class="menu-wrapper">
 								<div class="hamburger-menu">
@@ -32,7 +31,6 @@ get_header(); ?>
 								</ul>
 							</div><!--menu-wrapper-->
 						</div><!--menu-container-->
-					</div><!--header-animation-->
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section" id="Work">
@@ -78,7 +76,7 @@ get_header(); ?>
 						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
 				</div>
-				<h4 class="desktop-about-text">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
+				<h4 class="desktop-about-text" data-aos="fade-down">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
 						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
 						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
@@ -121,7 +119,7 @@ get_header(); ?>
 				<div class="language-container">
 					<ul class="language-list">
 						<li>
-							<p>HTML5</p>
+							<p class="tlt" data-in-effect="flipInY">HTML5</p>
 							<img src="<?php echo get_template_directory_uri();?>/images/html.png"/>
 						</li>
 						<li >
@@ -131,6 +129,10 @@ get_header(); ?>
 						<li>
 							<p>Sass</p>
 							<img src="<?php echo get_template_directory_uri();?>/images/sass.png"/>
+						</li>
+						<li>
+							<p>PHP</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/php.png"/>
 						</li>
 						<li>
 							<p>Javascript</p>

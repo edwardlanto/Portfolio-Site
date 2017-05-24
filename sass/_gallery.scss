@@ -85,13 +85,7 @@
             }
         }
     }
-
-    .archive-project-item{
-        img{
-            padding:0 1rem;
-        }
-    }
-
+    
     .archive-project-link{
         @include main-button;
         font-family:montserratmedium;
