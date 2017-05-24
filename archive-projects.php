@@ -9,6 +9,24 @@ get_header(); ?>
 <div class = "primary-secondary-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="menu-section">
+				<div class="menu-container">
+					<div class="menu-wrapper">
+						<div class="hamburger-menu">
+							<div class="bar"></div><!--empty-bar-->
+						</div><!--hamburger-menu-->
+						<div class="menu-container">
+							<p>Menu</p>
+						</div><!--menu-container-->
+							<ul class="nav-list">
+								<li><a href="#Work">Work</a></li>
+								<li><a href="#About">About</a></li>
+								<li><a href="#Expertise">Expertise</a></li>
+								<li><a href="#Contact">Contact</a></li>
+							</ul>
+						</div><!--menu-wrapper-->
+					</div><!--menu-container-->
+				</div><!--menu-section-->
 			<section class="gallery-hero">
 				<h1 class="tlt gallery-header" data-in-effect="flipInY">Portfolio</h1>
 				<p class="tlt2 gallery-paragraph" data-in-effect="fadeInLeft">“I strive for two things in design: simplicity and clarity. 
@@ -16,7 +34,7 @@ get_header(); ?>
 			</section>
 			<ul class="project-list">
 				<?php
-					$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
+					$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => -1));
 				?>
                 <?php 
                     while ( $loop -> have_posts() ) : $loop -> the_post(); 

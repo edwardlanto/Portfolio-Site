@@ -10,18 +10,6 @@
         $('.nav-list').css({"opacity":"1"}).toggle('slide').css({"display":"inherit"});
 	})
 
-
-   
-    // $(window).scroll( function(){
-    //     $('.fadein').each( function(){
-    //         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
-    //         if( bottom_of_window > bottom_of_object ){
-    //             $(this).animate({'opacity':'1'},1000);
-    //         }
-    //     }); 
-    // });
-
     $('.main-carousel').flickity({
         cellAlign: 'left',
         contain: true
@@ -110,8 +98,6 @@
 
     function resize() {
       if ($(window).width() > 720) {
-        alert('hello')
-        console.log('hello')
       }
 
     }

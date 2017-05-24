@@ -39,7 +39,7 @@ get_header(); ?>
 				<h2 class="section-header">Work</h2>
 				<ul class="project-list" data-aos="slide-up">
 					<?php
-						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 4));
+						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 6));
 					?>
                 	<?php 
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
@@ -90,8 +90,8 @@ get_header(); ?>
 			<div class="main-button-container">
 				<a href="#" class="main-button">About Me</a>
 			</div>
-			<section class="expertise-section" id="Expertise">
 				<h2 class="section-header fadein expertise-header" data-aos="fade-right">Expertise</h2>
+			<section class="expertise-section" id="Expertise">
 				<div class="full-logo-container">
 					<div class="logo-container" data-aos="flip-left">
 						<i class="fa fa-paint-brush" aria-hidden="true"></i>
@@ -117,7 +117,39 @@ get_header(); ?>
 						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus.</p>
 					</div>
-				</div>
+				</div><!--full-logo-container-->
+				<div class="language-container">
+					<ul class="language-list">
+						<li>
+							<p>HTML5</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/html.png"/>
+						</li>
+						<li >
+							<p>CSS</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/css.jpg"/>
+						</li>
+						<li>
+							<p>Sass</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/sass.png"/>
+						</li>
+						<li>
+							<p>Javascript</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/javascript.png"/>
+						</li>
+						<li>
+							<p>jQuery</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/jquery.gif"/>
+						</li>
+						<li>
+							<p>Angular</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/angular.svg"/>
+						</li>
+						<li>
+							<p>TypeScript</p>
+							<img src="<?php echo get_template_directory_uri();?>/images/typescript.png"/>
+						</li>
+					</ul>
+				</div><!--language-container-->
 			</section>
 			<section class="contact-section" aos-data="slide-up" id="Contact">
 				<h2 class="section-header" data-aos="fade-right">Contact</h2>
@@ -130,7 +162,7 @@ get_header(); ?>
 							mi sit amet elit venenatis luctus
 						</p>
 						<div class="contact-button-container">
-							<a href="#" class="main-button contact-button">Get Started</a>
+							<a href="contact" class="main-button contact-button">Get Started</a>
 						</div>
 					</div><!--contact-conten-container-->
 				</div><!--contact-content-wrapper-->

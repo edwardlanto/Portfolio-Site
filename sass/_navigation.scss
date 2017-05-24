@@ -147,7 +147,7 @@ $bar-spacing: 13px;
     list-style: none;
 	display:none;
 		@include desktop{
-			display:flex;
+			display:block;
 			bottom:-3rem;
 		}
 		li{

@@ -246,7 +246,7 @@
         padding-left: 0.5rem;
             @include desktop{
                 bottom:0;
-                font-size:4vw;
+                font-size:2vw;
                 font-family:'latoheavy';
                 top:auto;
             }
@@ -256,7 +256,7 @@
         height: 61vw;
         position:relative;
             @include desktop{
-                height:35vw;
+                height:23vw;
             }
         img{
             height:100%;
@@ -279,12 +279,15 @@
             @include desktop{
                 display: flex;
                 flex-wrap: wrap;
+                justify-content:space-around;
+                margin-top:2.5rem;
             }
             li{
                 position:relative;
                     @include desktop{
-                        width:50vw;
+                        width:30vw;
                         border:2px solid #fff;
+                        margin-bottom:1rem;
                     }
             }
     }
@@ -294,12 +297,12 @@
             @include desktop{
                 display: block;
                 position: absolute;
-                top: 50%;
+                top: 43%;
                 z-index: 300;
                 padding: .5rem;
                 padding-bottom:1rem;
                 text-decoration: none;
-                font-size: 3.5vw;
+                font-size: 2vw;
                 opacity: 0;
                 left: 20px;
                 text-transform: uppercase;
@@ -415,7 +418,8 @@
         font-size: 4vw;
         padding-top: 5vw;
             @include desktop{
-                font-size:2.1vw;
+                font-size:1.5vw;
+                padding-top:0.5vw;
             }
 
     }
@@ -457,20 +461,27 @@
     //Expertise Section
 
     .expertise-section{
-        background-color: #000;
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100% ),
+        url('../../images/computer-background.png')no-repeat center;
+        background-size:cover,cover;
+        display:flex;
     }
 
     .full-logo-container{
         padding-top:3rem;
-        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100% ),
-        url('../../images/computer-background.png')no-repeat center;
-        background-size:cover,cover;
+            @include desktop{
+                max-width: 60vw;
+            }
+ 
     }
 
     .logo-container{
         display:flex;
         flex-direction:column;
         align-items:center;
+            @include desktop{
+                padding: 0 3vw;
+            }
         i{
             color:#fdcd3b;
             font-size:4rem;
@@ -491,6 +502,56 @@
                 }
         }
     }
+
+    .language-container{
+        display:none;
+            @include desktop{
+                display:block;
+                    img{
+                        width:7rem;
+                        filter:grayscale(100%);
+                    }
+            }
+    }
+
+    .language-container{
+        li{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            width: 20vw;
+            justify-content: space-around;
+                p{
+                    color:#fff;
+                }
+        }
+    }
+
+    .language-list{
+        margin-top:3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .language-text{
+        img{
+            transition:all 0.3s linear;
+        }
+    }
+
+    .language-list{
+            li:hover{
+                img{
+                    filter:grayscale(0%);
+                }
+            }
+            img{
+                transition:all 0.4s ease-in-out;
+            }
+    }
+
 
 //Contact Section
 
