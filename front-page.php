@@ -103,27 +103,37 @@ get_header(); ?>
 				<div class="full-logo-container">
 					<div class="logo-container" data-aos="flip-left">
 						<i class="fa fa-paint-brush" aria-hidden="true"></i>
-						<h2>Design</h2>
-						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus.</p>
+						<h2>The Design</h2>
+							<p>
+								I love working alongside my clients and spend time to give them a
+								custom design that truly reflects their brand. Before the developing begins,
+								I give my clients a beautiful, responsive sketch of their site and work closely to
+								fit all their needs accordingly. If you have any current websites that include 
+								a sleek design or lively animations, feel free to let me know and I will do my best
+								to implement those features.
+							</p>
 					</div>
 					<div class="logo-container" data-aos="flip-right">
 						<i class="fa fa-wordpress" aria-hidden="true"></i>
-						<h2>Design</h2>
-						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus.</p>
+						<h2>WordPress</h2>
+						<p>
+							WordPress is the most popular of content management systems, with a beautiful,
+							easy to use design. With WordPress I will create you a personalized theme that will
+							have consistency of design along all pages and give you the ability to change content
+							easily from scratch. Alongside customizability, I can offer interactivity to bring your website to life with
+							animations, hover effects & more.
+
+						</p>
 					</div>
 					<div class="logo-container" data-aos="flip-left" delay="20000">
 						<i class="fa fa-code" aria-hidden="true"></i>
-						<h2>Design</h2>
-						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus.</p>
+						<h2>The Code</h2>
+						<p>
+							I have a passion for developing and I love coding from scratch and I will put all my technical
+							skills and devotion into your website. The type of code I will write your website in is
+							HTML5, CSS3, PHP and Javascript. As a developer I always try to write organized, maintainable
+							code that will be optimized for browser speed success.
+						</p>
 					</div>
 				</div><!--full-logo-container-->
 				<div class="language-container">
