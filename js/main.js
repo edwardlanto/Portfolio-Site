@@ -1,4 +1,7 @@
 (function($){
+
+    //Responsive Menu
+
     $('.menu').hide();
     $('.menu-button-container').on('click',function(){
         $('.menu').toggle();
@@ -102,7 +105,19 @@
 
     }
 
-    resize();
+    resize();   
+
+    //Sticky Header
+
+    $(window).scroll(function(){
+        event.preventDefault();
+        var y = $(window).scrollTop();
+        if(y >= 420){
+            $('.fixed-header').css({"display":"block"})
+        }else{
+            $('.fixed-header').css({"display":"none"});
+        }
+    })
 
 
 })(jQuery)

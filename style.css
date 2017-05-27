@@ -3223,6 +3223,29 @@ a {
 .home #page {
   overflow-x: hidden; }
 
+.home .fixed-header {
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+  display: none; }
+  .home .fixed-header ul {
+    width: 100vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 13vw;
+    max-height: 50px;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'latobold';
+    border-bottom: 2px ridged #0ade74; }
+    .home .fixed-header ul a {
+      color: #0ade74;
+      text-decoration: none; }
+
 .home .hero-background {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/chair-background.jpg);
   background-repeat: no-repeat,no-repeat;
@@ -3251,15 +3274,15 @@ a {
 .home .menu-toggle {
   display: none; }
 
-@media (min-width: 720px) {
-  .home .typing-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    width: 100vw;
-    -ms-flex-align: center;
-        align-items: center; } }
+.home .typing-container {
+  margin-top: 5.5vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100vw;
+  -ms-flex-align: center;
+      align-items: center; }
 
 @media (min-width: 720px) {
   .home .element {
@@ -3407,6 +3430,9 @@ a {
   opacity: 1;
   transition: all 0.7 ease-in-out; }
 
+.home .project-item:hover .project-content {
+  display: block; }
+
 .home .project-hover {
   position: absolute;
   bottom: 0;
@@ -3498,6 +3524,7 @@ a {
   @media (min-width: 720px) {
     .home .project-content {
       font-size: 1.5vw;
+      display: none;
       padding-top: 0.5vw; } }
 
 .home .text-gradient {
@@ -3631,10 +3658,8 @@ a {
   margin-bottom: 1rem; }
 
 .home .contact-button-container {
-  text-align: center; }
-
-.home .contact-button {
-  bottom: -12vh; }
+  text-align: center;
+  margin-top: 10vw; }
 
 /*--------------------------------------------------------------
 # Accessibility

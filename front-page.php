@@ -9,28 +9,38 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="fixed-header">
+				<ul>
+					<li><a href="#Work">Work</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Expertise">Expertise</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</div>
 			<section class="hero-container" data-aos="zoom-in-up" delay="100">
 				<div class="hero-background">
 						<div class="typing-container">
 							<span class="element"></span>
 							<span class="element2"></span>
 						</div><!--typing-container-->
-						<div class="menu-container">
-							<div class="menu-wrapper">
-								<div class="hamburger-menu">
-									<div class="bar"></div><!--empty-bar-->
-								</div><!--hamburger-menu-->
-								<div class="menu-container">
-									<p>Menu</p>
-								</div><!--menu-container-->
-								<ul class="nav-list">
-									<li><a href="#Work">Work</a></li>
-									<li><a href="#About">About</a></li>
-									<li><a href="#Expertise">Expertise</a></li>
-									<li><a href="#Contact">Contact</a></li>
-								</ul>
-							</div><!--menu-wrapper-->
-						</div><!--menu-container-->
+						<div class="menu-main-wrapper">
+							<div class="menu-container">
+								<div class="menu-wrapper">
+									<div class="hamburger-menu">
+										<div class="bar"></div><!--empty-bar-->
+									</div><!--hamburger-menu-->
+									<div class="menu-container">
+										<p>Menu</p>
+									</div><!--menu-container-->
+									<ul class="nav-list">
+										<li><a href="#Work">Work</a></li>
+										<li><a href="#About">About</a></li>
+										<li><a href="#Expertise">Expertise</a></li>
+										<li><a href="#Contact">Contact</a></li>
+									</ul>
+								</div><!--menu-wrapper-->
+							</div><!--menu-container-->
+						</div>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section" id="Work">
@@ -153,10 +163,10 @@ get_header(); ?>
 					</ul>
 				</div><!--language-container-->
 			</section>
-			<section class="contact-section" aos-data="slide-up" id="Contact">
-				<h2 class="section-header" data-aos="fade-right">Contact</h2>
+			<section class="contact-section" id="Contact">
+				<h2 class="section-header">Contact</h2>
 				<div class="contact-icon-content-wrapper">
-					<div class="contact-content-container" data-aos="slide-up">
+					<div class="contact-content-container">
 						<h2 class="contact-heading">Start a project</h2>
 						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
@@ -165,8 +175,8 @@ get_header(); ?>
 						</p>
 						<div class="contact-button-container">
 							<a href="contact" class="main-button contact-button">Get Started</a>
-						</div>
-					</div><!--contact-conten-container-->
+						</div><!--contact-button-container-->
+					</div><!--contact-content-container-->
 				</div><!--contact-content-wrapper-->
 			</section>
 		</main><!-- #main -->
