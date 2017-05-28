@@ -91,13 +91,10 @@ get_header(); ?>
 						pulvinar iaculis. Vestibulum venenatis us dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus. </h4>
 			</section>
-			<div class="main-button-container">
-				<a href="#" class="main-button">About Me</a>
-			</div>
 				<h2 class="section-header fadein expertise-header" data-aos="fade-right">Expertise</h2>
 			<section class="expertise-section" id="Expertise">
 				<div class="full-logo-container">
-					<div class="logo-container" data-aos="flip-left">
+					<div class="logo-container" data-aos="flip-left" data-aos-once="true">
 						<i class="fa fa-paint-brush" aria-hidden="true"></i>
 						<h2>The Design</h2>
 							<p>
@@ -109,7 +106,7 @@ get_header(); ?>
 								to implement those features.
 							</p>
 					</div>
-					<div class="logo-container" data-aos="flip-right">
+					<div class="logo-container" data-aos="flip-right" data-aos-once="true">
 						<i class="fa fa-wordpress" aria-hidden="true"></i>
 						<h2>WordPress</h2>
 						<p>
@@ -121,7 +118,7 @@ get_header(); ?>
 
 						</p>
 					</div>
-					<div class="logo-container" data-aos="flip-left">
+					<div class="logo-container" data-aos="flip-left" data-aos-once="true">
 						<i class="fa fa-code" aria-hidden="true"></i>
 						<h2>The Code</h2>
 						<p>
@@ -174,10 +171,9 @@ get_header(); ?>
 				<div class="contact-icon-content-wrapper">
 					<div class="contact-content-container">
 						<h2 class="contact-heading">Start a project</h2>
-						<p>Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-							fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-							augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-							mi sit amet elit venenatis luctus
+						<p>Ready to start? If so , click the GET STARTED button and start 
+							our journey to web development success. I would love to hear and answer and questions
+							about my services, feel free & dont be shy !
 						</p>
 						<div class="contact-button-container">
 							<a href="contact" class="main-button contact-button">Get Started</a>

@@ -37,10 +37,6 @@
             }
     }
 
-    .video-background{
-        height:500px;
-    }
-
     .menu-toggle{
         display:none;
     }
@@ -136,6 +132,7 @@
     .project-title{
         text-transform: uppercase;
         width: 80%;
+        margin: 0 auto;
         position: static;
         bottom:0;
         font-family:'latoheavy';
@@ -191,7 +188,7 @@
             @include desktop{
                 display: block;
                 position: absolute;
-                top: 43%;
+                bottom:1.5rem;
                 z-index: 300;
                 padding: .5rem;
                 padding-bottom:1rem;
@@ -246,6 +243,11 @@
                 color:#fff;
                 font-family:montserrat_alternatesXLt;
                 display:none;
+                margin-top: 1.5rem;
+                font-size:5vw;
+                    @include desktop{
+                        font-size: 1.3vw;
+                    }
 
             }
     }

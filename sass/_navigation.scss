@@ -101,15 +101,6 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -260,5 +251,11 @@ $bar-spacing: 13px;
 	bottom: 0;
 	transform: rotate(-45deg);
 	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+#primary-menu{
+	display:block !important;
+    position: fixed;
+    top: 0;
 }
 

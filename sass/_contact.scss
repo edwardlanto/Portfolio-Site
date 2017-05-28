@@ -156,8 +156,13 @@
         width: 24vw;
         font-size: 1.4rem;
         margin-left: 3vw;
-            a{
+            i{
                 color:$main__color;
+                transition:all 0.4s linear;
+                    &:hover{
+                        font-size:1.7rem;
+                        color:$accent__color;
+                    }
             }
             @include desktop{
                 margin-top:1rem;
@@ -184,23 +189,23 @@
 
     //Send Plane animation
 
-    .plane-move{
-        animation:plane 2.5s ease-in-out;
-        // animation-fill-mode:forwards;
-    }
+    // .plane-move{
+    //     animation:plane 2.5s ease-in-out;
+    //     // animation-fill-mode:forwards;
+    // }
 
-    @keyframes plane{
-        0%{
-            transform:translate(0px,0px);
-        }
-        50%{
-            transform:translate(20px,20px);
-        }
-        100%{
-            transform:translate(120vw,-3rem);
-            color:#fff;
-        }
-    }
+    // @keyframes plane{
+    //     0%{
+    //         transform:translate(0px,0px);
+    //     }
+    //     50%{
+    //         transform:translate(20px,20px);
+    //     }
+    //     100%{
+    //         transform:translate(120vw,-3rem);
+    //         color:#fff;
+    //     }
+    // }
 
 
 }//Contact Page Wrapper
