@@ -34,10 +34,9 @@
                 color:$main__color;
                 background-color: transparent;
                 text-align: center;
-                padding: 3rem 0;
                 background-color:rgba(0,0,0,.4);
                 font-family:montserratmedium;
-                margin-top:3rem;
+                padding: 3rem 4vw;
             }
     }
 
@@ -181,6 +180,26 @@
                 color:#fff;
                 font-size:8vw;
             }
+    }
+
+    //Send Plane animation
+
+    .plane-move{
+        animation:plane 2.5s ease-in-out;
+        // animation-fill-mode:forwards;
+    }
+
+    @keyframes plane{
+        0%{
+            transform:translate(0px,0px);
+        }
+        50%{
+            transform:translate(20px,20px);
+        }
+        100%{
+            transform:translate(120vw,-3rem);
+            color:#fff;
+        }
     }
 
 

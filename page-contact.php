@@ -13,34 +13,33 @@ get_header(); ?>
 			<section class="contact-hero">
 				<ul class="contact-social-media-container">
 					<li>
-						<a href="#" class="icon-button twitter">
+						<a href="https://www.linkedin.com/in/edward-lanto-54172513a/" class="icon-button twitter">
 							<i class="fa fa-linkedin" aria-hidden="true"></i>
 							<span></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="icon-button facebook">
+						<a href="https://www.facebook.com/edward.lanto" class="icon-button facebook">
 							<i class="fa fa-facebook" aria-hidden="true"></i>
 							<span></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="icon-button google-plus envelope-icon">
+						<a href="mailto:edwardlanto@hotmail.com" class="icon-button google-plus envelope-icon">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span></span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="icon-button pinterest github">
+						<a href="https://github.com/edwardlanto" class="icon-button pinterest github">
 							<i class="fa fa-github-square" aria-hidden="true"></i>
 							<span></span>
 						</a>
 					</li>			
 				</ul>
 				<h1 class="tlt3" data-in-effect="wobble" data-aos="fade-right">Hello</h1>
-				<h3 data-aos="fade-up" class="tlt4">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-				fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-				augue
+				<h3 data-aos="fade-up" class="tlt4">Interested in working with me? Or just want to say ‘Hello’? 
+				Please use the contact form below or send us an email to edwardlanto@hotmail.com I will be in contact with you as soon as we can.
 				</h3>
 				<div class="button-container">
 					<a href="#Contact">Contact</a>

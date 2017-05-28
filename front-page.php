@@ -59,10 +59,7 @@ get_header(); ?>
 						</div><!--project-image-->
 						<p class="project-title"><?php the_title(); ?></p>
 						<div class="project-hover">
-							<p class="project-content">Vestibulum aliquam ipsum sed luctus volutpat. 
-							Praesent dignissim lobortis leo, sit amet tristique 
-							mauris ultrices eu. Sed
-							</p>
+								<?php echo the_content(); ?>
 						</div>
 					</li>
 					<?php 

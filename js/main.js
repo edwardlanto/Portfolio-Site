@@ -134,5 +134,20 @@
         }
     })
 
+    function checkSubmit(){
+        if($('.wpcf7-response-output').hasClass('wpcf7-mail-sent-ok')){
+            $('.fa-paper-plane-o').css({"color":"#0ade74"}).addClass('plane-move')
+            setTimeOut(function(){
+                location.reload();
+            },2000)
+        }
+    }
+
+    $('.wpcf7-submit').on('click',function(){
+        setTimeout(function(){
+            checkSubmit();
+        }, 2000)
+     });
+
 
 })(jQuery)

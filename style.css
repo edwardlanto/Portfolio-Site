@@ -623,7 +623,7 @@ big {
         border-bottom-width: 20px;
         padding: 5px;
         letter-spacing: 20px;
-        font-size: 2rem; }
+        font-size: 1.5rem; }
 
 .fancybox-enabled {
   overflow: hidden; }
@@ -1365,10 +1365,9 @@ textarea {
     color: #0ade74;
     background-color: transparent;
     text-align: center;
-    padding: 3rem 0;
     background-color: rgba(0, 0, 0, 0.4);
     font-family: montserratmedium;
-    margin-top: 3rem; }
+    padding: 3rem 4vw; }
 
 .page-template-page-contact .button-container {
   width: 100vw;
@@ -1498,6 +1497,18 @@ textarea {
   .page-template-page-contact .send-container i {
     color: #fff;
     font-size: 8vw; }
+
+.page-template-page-contact .plane-move {
+  animation: plane 2.5s ease-in-out; }
+
+@keyframes plane {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(20px, 20px); }
+  100% {
+    transform: translate(120vw, -3rem);
+    color: #fff; } }
 
 /**
  * Fade animations:
@@ -3095,9 +3106,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .post-type-archive-projects .fixed-header {
   visibility: hidden; }
 
-.post-type-archive-projects .wpcf7-submit {
-  max-width: 200px; }
-
 /*! Flickity v2.0.6
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -3510,14 +3518,14 @@ a {
 .home .project-title {
   text-transform: uppercase;
   width: 80%;
-  position: absolute;
-  top: 55%;
+  position: static;
+  bottom: 0;
   font-family: 'latoheavy';
   color: #fdcd3b;
   z-index: 100;
   left: 2px;
   transition: background-color .4s linear;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   text-align: left;
   padding-left: 0.5rem; }
@@ -3586,6 +3594,8 @@ a {
 
 .home .project-item:hover .project-hover {
   height: 100%; }
+  .home .project-item:hover .project-hover p {
+    display: block; }
 
 .home .project-item:hover .project-title {
   background-color: #fff;
@@ -3596,9 +3606,6 @@ a {
   opacity: 1;
   transition: all 0.7 ease-in-out; }
 
-.home .project-item:hover .project-content {
-  display: block; }
-
 .home .project-hover {
   position: absolute;
   bottom: 0;
@@ -3607,6 +3614,10 @@ a {
   transition: height 0.4s ease-in-out;
   width: 100%;
   padding: 0 1rem; }
+  .home .project-hover p {
+    color: #fff;
+    font-family: montserrat_alternatesXLt;
+    display: none; }
 
 .home .main-button {
   text-decoration: none;
@@ -3630,17 +3641,6 @@ a {
     width: 18rem;
     letter-spacing: 2px;
     border: 2px solid #0ade74; }
-
-.home .project-content {
-  color: #fff;
-  font-family: montserrat_alternatesXLt;
-  font-size: 4vw;
-  padding-top: 5vw; }
-  @media (min-width: 720px) {
-    .home .project-content {
-      font-size: 1.5vw;
-      display: none;
-      padding-top: 0.5vw; } }
 
 .home .about-background {
   padding-top: 3rem; }

@@ -136,14 +136,14 @@
     .project-title{
         text-transform: uppercase;
         width: 80%;
-        position: absolute;
-        top: 55%;
+        position: static;
+        bottom:0;
         font-family:'latoheavy';
         color: $accent__color;
         z-index: 100;
         left: 2px;
         transition: background-color .4s linear;
-        font-size: 2rem;
+        font-size: 1.5rem;
         // text-shadow: 6px 10px 12px #000;
         letter-spacing: 2px;
         text-align: left;
@@ -219,6 +219,9 @@
     .project-item:hover{
         .project-hover{
             height:100%;
+                p{
+                    display:block;
+                }
         }
         .project-title{
             background-color:#fff;
@@ -228,10 +231,6 @@
         .project-link{
             opacity:1;
             transition:all 0.7 ease-in-out;
-        }
-
-        .project-content{
-            display:block;
         }
     }
 
@@ -243,6 +242,12 @@
         transition: height 0.4s ease-in-out;
         width:100%;
         padding:0 1rem;
+            p{
+                color:#fff;
+                font-family:montserrat_alternatesXLt;
+                display:none;
+
+            }
     }
 
 
@@ -252,18 +257,18 @@
        @include main-button;
    }
 
-     .project-content{
-        color:#fff;
-        font-family:montserrat_alternatesXLt;
-        font-size: 4vw;
-        padding-top: 5vw;
-            @include desktop{
-                font-size:1.5vw;
-                display:none;
-                padding-top:0.5vw;
-            }
+    //  .project-content{
+    //     color:#fff;
+    //     font-family:montserrat_alternatesXLt;
+    //     font-size: 4vw;
+    //     padding-top: 5vw;
+    //         @include desktop{
+    //             font-size:1.5vw;
+    //             display:none;
+    //             padding-top:0.5vw;
+    //         }
 
-    }
+    // }
 
 
     //About Section
