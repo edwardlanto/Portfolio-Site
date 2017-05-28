@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="fixed-header">
-				<ul>
+				<ul class="home-list">
 					<li><a href="#Work">Work</a></li>
 					<li><a href="#About">About</a></li>
 					<li><a href="#Expertise">Expertise</a></li>

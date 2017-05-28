@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name:Projects
  *
  * @package RED_Starter_Theme
  */

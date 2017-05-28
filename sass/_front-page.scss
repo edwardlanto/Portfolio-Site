@@ -5,29 +5,11 @@
     }
 
     .fixed-header{
-        position:fixed;
-        top:0;
-        z-index:5000;
-        display:none;
-            ul{
-                width: 100vw;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-pack: distribute;
-                justify-content: space-around;
-                background-color: rgba(0,0,0,0.4);
-                height: 13vw;
-                max-height: 50px;
-                -ms-flex-align: center;
-                align-items: center;
-                font-size: 1rem;
-                font-family:'latobold';
-                border-bottom:2px ridged #0ade74;
-                    a{
-                        color: #0ade74;
-                        text-decoration:none;
-                    }
+        ul{
+            @include desktop{
+                font-size:30px;
             }
+        }
     }
 
     .hero-background{
@@ -106,7 +88,7 @@
     .element2{
         display: flex;
         justify-content: center;
-        color:$main__color;
+        color:$accent__color;
         opacity:0;
         animation:fade-header 2s linear 5s;
         animation-fill-mode:forwards;
@@ -143,8 +125,8 @@
         color: rgba(0,0,0,0.6);
         text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
         margin-bottom: 0;
-        border-top: 2px solid #0ade74;
-        border-bottom: 2px solid #0ade74;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
         background-color: #2D3C40;
     }
 
@@ -155,19 +137,20 @@
         text-transform: uppercase;
         width: 80%;
         position: absolute;
-        top: 35%;
+        top: 55%;
         font-family:'latoheavy';
-        color: $main__color;
+        color: $accent__color;
         z-index: 100;
         left: 2px;
         transition: background-color .4s linear;
         font-size: 2rem;
-        text-shadow: 6px 10px 12px #000;
+        // text-shadow: 6px 10px 12px #000;
         letter-spacing: 2px;
         text-align: left;
         padding-left: 0.5rem;
             @include desktop{
                 bottom:0;
+                top:35%;
                 font-size:2vw;
                 font-family:'latoheavy';
                 top:auto;
@@ -230,6 +213,7 @@
 
     .project-item{
         cursor:pointer;
+        margin: 1rem 0rem;
     }
 
     .project-item:hover{
@@ -388,7 +372,7 @@
                 padding: 0 3vw;
             }
         i{
-            color:$main__color;
+            color:$accent__color;
             font-size:4rem;
         }
         h2{
@@ -470,7 +454,7 @@
     }
 
     .contact-heading{
-        color:$main__color;;
+        color:$accent__color;;
         text-align:center;
         font-family:'latobold';
         font-size:2rem;

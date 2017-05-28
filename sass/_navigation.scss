@@ -222,7 +222,7 @@ $bar-spacing: 13px;
     	text-transform: uppercase;
 		margin-top: 0;
 		font-family:'latobold';
-		color: #0ade74;
+		color: #fff;
 		@include main-text-shadow;
 			@include desktop{
 				display:none;
@@ -261,3 +261,4 @@ $bar-spacing: 13px;
 	transform: rotate(-45deg);
 	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
+
