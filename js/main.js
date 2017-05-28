@@ -48,6 +48,8 @@
     $(".fancybox:eq(1)").attr("data-caption", "Caption2")
     $(".fancybox:eq(2)").attr("data-caption", "Caption3")
 
+    //Header Animation
+
 
     $('.tlt').textillate({
         in: {
@@ -79,7 +81,11 @@
 
     $('.tlt2').textillate({
         initialDelay: 1200,
-        delay: 100,
+        delay: 100
+    })
+
+    $('.tlt3').textillate({
+        delay:200
     })
 
     //Smooth Scroll

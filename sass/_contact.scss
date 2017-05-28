@@ -1,0 +1,117 @@
+.page-template-page-contact{
+
+    .contact-hero{
+        background:
+        url('../../images/contact-background.jpg')no-repeat center;
+        background-size:cover;
+        height:100vh;
+        width:100vw;
+            h1{
+                font-size: 23vw;
+                text-transform: uppercase;
+                font-family: latoheavy;
+                color: #000;
+                margin-bottom:0;
+                text-align: center;
+                margin-top: 0;
+                text-align: center;
+                // text-shadow: 0px 0px 7px #000;
+            }
+            h3{
+                color:$main__color;
+                background-color: transparent;
+                text-align: center;
+                padding: 3rem 0;
+                background-color:rgba(0,0,0,.4);
+                font-family:montserratmedium;
+            }
+    }
+
+    .button-container{
+        width:100vw;
+        display:flex;
+        justify-content:center;
+            a{
+                text-decoration: none;
+                width: 200px;
+                border: 3px solid #000;
+                height: 55px;
+                font-size:1.4rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                text-transform: uppercase;
+                color:#000;
+                font-family:'latobold';
+                transition:all 0.4s linear;
+                margin:6.5vh;
+                    &:hover{
+                        background-color:#000;
+                        color:$main__green;
+                    }
+            }
+    }
+
+    .entry-title{
+        margin:0;
+        color: #fff;
+        font-size: 14vw;
+        text-align: center;
+        padding-top: 15vw;
+        text-transform: uppercase;
+        font-family:'latoheavy';
+        letter-spacing:3px;
+    }
+
+    .entry-title:before{
+        content: "";
+        position: relative;
+        bottom: 0;
+        height: 1px;
+        width: 30px;
+        border-bottom: 3.4px solid #74b564;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+
+    .contact-section{
+        background:#10131A;
+    }
+
+    article{
+        display:inline-block
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:17vw;
+            input{
+                width:80vw;
+            }
+            label{
+                color:$main__green;
+                font-size: 23px;
+                text-transform: uppercase;
+                font-family:'montserratmedium';
+            }
+    }
+
+    .wpcf7-submit{
+        border:3px solid $main__color;
+        box-shadow:none;
+        font-size: 10vw;
+        font-family:'latoheavy';
+        text-transform:uppercase;
+        text-shadow:none;
+        color:$main__color;
+        background:#000;
+    }
+
+
+}//Contact Page Wrapper
