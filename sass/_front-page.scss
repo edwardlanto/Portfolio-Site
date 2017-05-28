@@ -155,7 +155,7 @@
         text-transform: uppercase;
         width: 80%;
         position: absolute;
-        top: 55%;
+        top: 35%;
         font-family:'latoheavy';
         color: $main__color;
         z-index: 100;
@@ -184,17 +184,6 @@
             height:100%;
         }
     }
-
-    // .project-gradient{
-    //     background: linear-gradient(180deg,rgba(76, 72, 72, 0.25) 0,rgba(117, 117, 152, 0.5));
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     z-index: 100;
-    // }
-
-   
-
 
     .project-list{ 
         overflow-y: hidden;
@@ -279,17 +268,35 @@
        @include main-button;
    }
 
+     .project-content{
+        color:#fff;
+        font-family:montserrat_alternatesXLt;
+        font-size: 4vw;
+        padding-top: 5vw;
+            @include desktop{
+                font-size:1.5vw;
+                display:none;
+                padding-top:0.5vw;
+            }
+
+    }
+
 
     //About Section
 
+    .about-background{
+        padding-top:3rem;
+    }
+
     .about-section{
         position: relative;
-        height: 100vh;
+        height: 138vh;
         max-height: 40rem;
         background-color: #353535;
         z-index: -10;
         background:url("../../images/coffee-background.jpg")no-repeat;
         background-size:cover;
+        overflow-y:scroll;
             @include desktop{
                 background:url("../../images/desktop-about-background.jpg")no-repeat;
                 box-sizing: border-box;
@@ -338,48 +345,16 @@
             }
     }
 
-    .project-content{
-        color:#fff;
-        font-family:montserrat_alternatesXLt;
-        font-size: 4vw;
-        padding-top: 5vw;
-            @include desktop{
-                font-size:1.5vw;
-                display:none;
-                padding-top:0.5vw;
-            }
-
-    }
-        
-    // .about-background{
-    //     width:100vw;
-    //     height:auto;
-    //     z-index: -2;
-    //     max-height: 480px;
-    // }
-
-    .text-gradient{
-        background-color: #353535;
-        width: 95vw;
-        height: 98%;
-        opacity: .7 !important;
-        position: absolute;
-        max-height: 555px;
-        z-index:-1;
-        top:0;
-        border:2px solid $main__color;
-            @include desktop{
-                display:none;
-            }
-    }
+  
 
     .about-text{
-        position: relative;
-        margin-left: 1rem;
-        width:87vw;
-        color:#fff;
-        font-family:montserratextralight;
+        width: 90vw;
+        color: #fff;
+        font-family: montserratextralight;
         padding: 1rem 0;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,.7);
+        padding: 1rem 1rem;
             @include desktop{
                 display:none;
             }

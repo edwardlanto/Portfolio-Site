@@ -76,14 +76,13 @@ get_header(); ?>
 			<h2 class="section-header" id="About">Who Am I</h2>
 			<section class="about-section">
 				<div class="about-background" data-aos="slide-up">
-					<p class="about-text" data-aos="fade-right" delay="10000">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
+					<p class="about-text" data-aos="fade-right" delay="3000">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
 						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
 						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
 						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
 						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
 						rhoncus condimentum. Vivamus ut volutpat nisl. 
 						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat.
-						<div class="text-gradient" data-aos="fade-right" delay="1000"></div>
 					</p>
 				</div>
 				<h4 class="desktop-about-text" data-aos="fade-down">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
@@ -125,7 +124,7 @@ get_header(); ?>
 
 						</p>
 					</div>
-					<div class="logo-container" data-aos="flip-left" delay="20000">
+					<div class="logo-container" data-aos="flip-left">
 						<i class="fa fa-code" aria-hidden="true"></i>
 						<h2>The Code</h2>
 						<p>

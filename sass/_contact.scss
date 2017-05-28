@@ -6,6 +6,10 @@
         background-size:cover;
         height:100vh;
         width:100vw;
+            @include desktop{
+                background-size:contain;
+                height:120vh;
+            }
             h1{
                 font-size: 23vw;
                 text-transform: uppercase;
@@ -15,7 +19,12 @@
                 text-align: center;
                 margin-top: 0;
                 text-align: center;
-                // text-shadow: 0px 0px 7px #000;
+                text-shadow:none;
+                    @include desktop{
+                        color:$main__color;
+                        text-shadow: 0px 0px 10px #000;
+                        font-size:16vw;
+                    }
             }
             h3{
                 color:$main__color;
@@ -24,6 +33,7 @@
                 padding: 3rem 0;
                 background-color:rgba(0,0,0,.4);
                 font-family:montserratmedium;
+                margin-top:3rem;
             }
     }
 
@@ -61,6 +71,9 @@
         text-transform: uppercase;
         font-family:'latoheavy';
         letter-spacing:3px;
+            @include desktop{
+                padding-top:6vw;
+            }
     }
 
     .entry-title:before{
@@ -76,6 +89,9 @@
         justify-content: center;
         border-radius: 2px;
         margin: 0 auto;
+            @include desktop{
+                width:150px;
+            }
     }
 
     .contact-section{
@@ -91,6 +107,10 @@
         flex-direction: column;
         align-items: center;
         margin-top:17vw;
+            @include desktop{
+                margin-top:2vw;
+                width:100vw;
+            }
             input{
                 width:80vw;
             }
@@ -103,14 +123,39 @@
     }
 
     .wpcf7-submit{
-        border:3px solid $main__color;
+        border:3px solid #fff;
         box-shadow:none;
         font-size: 10vw;
         font-family:'latoheavy';
         text-transform:uppercase;
         text-shadow:none;
-        color:$main__color;
+        color:#fff;
         background:#000;
+        transition:all 0.4s linear;
+            &:hover{
+                box-shadow:none;
+                color:$main__color;
+                border:3px solid $main__color;
+            }
+    }
+
+    .contact-social-media-container{
+        z-index: 2000;
+        position: absolute;
+        top: 0;
+        width: 24vw;
+        font-size: 1.4rem;
+        margin-left: 3vw;
+            a{
+                color:$main__color;
+            }
+            @include desktop{
+                margin-top:1rem;
+            }
+    }
+
+    textarea{
+        width:80vw;
     }
 
 

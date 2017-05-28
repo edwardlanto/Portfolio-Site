@@ -39,7 +39,7 @@
      AOS.init({
       offset: 200,
       duration: 700,
-      easing: 'ease-in-out',
+      easing: 'ease-in-out'
     });
 
     $(".fancybox").fancybox();
@@ -86,6 +86,15 @@
 
     $('.tlt3').textillate({
         delay:200
+    })
+
+    $('.tlt4').textillate({
+        loop:false,
+        in:{
+            delay:20,
+            effect: 'fadeInLeftBig',
+            minDisplayTime:10000
+        }
     })
 
     //Smooth Scroll

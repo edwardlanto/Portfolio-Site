@@ -258,7 +258,6 @@
 
   $.fn.textillate.defaults = {
     selector: '.texts',
-    loop: false,
     minDisplayTime: 2000,
     initialDelay: 0,
     in: {
