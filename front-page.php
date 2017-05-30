@@ -45,7 +45,7 @@ get_header(); ?>
     		</section>
 			<section class="work-section" id="Work">
 				<h2 class="section-header">Work</h2>
-				<ul class="project-list" data-aos="slide-up">
+				<ul class="project-list">
 					<?php
 						$loop = new WP_query(array('post_type' => 'projects', 'posts_per_page' => 6));
 					?>
@@ -73,23 +73,21 @@ get_header(); ?>
 			<h2 class="section-header" id="About">Who Am I</h2>
 			<section class="about-section">
 				<div class="about-background" data-aos="slide-up">
-					<p class="about-text" data-aos="fade-right" delay="3000">Duis id quam at lorem pretium interdum. Aenean velit ex, iaculis at 
-						fermentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
-						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
-						rhoncus condimentum. Vivamus ut volutpat nisl. 
-						In hac habitasse platea dictumst. Vestibulum aliquam ipsum sed luctus volutpat.
+					<p class="about-text" data-aos="zoom-out">
+						As for a little bit about me, I'm a passionate, front-end web developer/designer based out of Vancouver, British Columbia.
+						I am very familiar with Word Press and delivering sleek, customizable designs to my clients. If you have any ideas that need
+						some creative injection, you found the right place!
+						My job as a developer is to build you a fully functional website, but at the same time attractive and user-friendly.
+						Essentially, I will build you a website that gives liveliness to your brand and bring across your message in a creative way.
 					</p>
 				</div>
-				<h4 class="desktop-about-text" data-aos="fade-down">mentum eu, maximus at est. Etiam mollis, odio et euismod commodo, 
-						augue odio tempus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
-						pulvinar iaculis. Vestibulum venenatis lectus a urna ultrices, in efficitur 
-						rhoncus condimentum. Vivamus ut volutpatus dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus. Suspendisse et massa felis. Sed dapibus 
-						pulvinar iaculis. Vestibulum venenatis us dolor, non interdum magna ligula a orci. Quisque sed 
-						mi sit amet elit venenatis luctus. </h4>
+				<h4 class="desktop-about-text" data-aos="zoom-out">
+					As for a little bit about me, I'm a passionate, front-end web developer/designer based out of Vancouver, British Columbia.
+						I am very familiar with Word Press and delivering sleek, customizable designs to my clients. If you have any ideas that need
+						some creative injection, you found the right place!
+						My job as a developer is to build you a fully functional website, but at the same time attractive and user-friendly.
+						Essentially, I will build you a website that gives liveliness to your brand and bring across your message in a creative way.
+				</h4>
 			</section>
 				<h2 class="section-header fadein expertise-header" data-aos="fade-right">Expertise</h2>
 			<section class="expertise-section" id="Expertise">

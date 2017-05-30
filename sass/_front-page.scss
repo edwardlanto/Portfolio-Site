@@ -107,7 +107,9 @@
         text-align: center;
         position:relative;
         height:auto;
-        background-color:#353535;
+        background:linear-gradient( to bottom, rgba(53,53,53,0.4) 0%, rgba(53,53,53,0.7) 100% ),
+        url('../../images/future-background.jpg')no-repeat center;
+        background-size:cover,cover;
     }
 
 
@@ -141,10 +143,12 @@
         left: 2px;
         transition: background-color .4s linear;
         font-size: 1.5rem;
-        // text-shadow: 6px 10px 12px #000;
+        text-align: center;
         letter-spacing: 2px;
-        text-align: left;
         padding-left: 0.5rem;
+        margin-top: 0.5rem;
+        border-bottom: 2px dotted #fff;
+        padding-bottom: 0.5rem;
             @include desktop{
                 bottom:0;
                 top:35%;
@@ -158,7 +162,7 @@
         height: 61vw;
         position:relative;
             @include desktop{
-                height:23vw;
+                height:19vw;
             }
         img{
             height:100%;
@@ -358,6 +362,7 @@
         url('../../images/computer-background.png')no-repeat center;
         background-size:cover,cover;
         display:flex;
+        padding-bottom: 4rem;
     }
 
     .full-logo-container{

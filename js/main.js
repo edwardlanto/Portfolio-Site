@@ -149,5 +149,10 @@
         }, 2000)
      });
 
+     //Project Item Attribute Injection
+
+     $('.project-item:even').attr('data-aos','fade-down-right','data-aos-delay','4100');
+     $('.project-item:odd').attr('data-aos','fade-up-left','data-aos-delay','4500');
+
 
 })(jQuery)

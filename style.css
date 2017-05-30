@@ -610,19 +610,18 @@ big {
     -ms-flex-align: center;
     align-items: center;
     font-size: 1rem;
-    font-family: 'latobold';
-    border-bottom: 2px ridged #0ade74; }
+    font-family: 'montserratthin';
+    border-bottom: 2px ridged #fdcd3b; }
     .fixed-header ul a {
-      color: #0ade74;
-      border-top: 2px solid #0ade74;
-      border-bottom: 2px solid #0ade74;
+      color: #fdcd3b;
+      border-bottom: 2px solid #fdcd3b;
       text-decoration: none;
       transition: all 0.5s ease-in-out;
       padding: 10px 0px 20px 0px; }
       .fixed-header ul a:hover {
         border-bottom-width: 20px;
         padding: 5px;
-        letter-spacing: 20px;
+        letter-spacing: 10px;
         font-size: 1.5rem; }
 
 .fancybox-enabled {
@@ -3080,10 +3079,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-bottom: 1.5rem; }
   .post-type-archive-projects .archive-project-link:hover {
     border-radius: 25px;
-    color: #0ade74;
+    color: #fdcd3b;
     width: 18rem;
     letter-spacing: 2px;
-    border: 2px solid #0ade74; }
+    border: 2px solid #fdcd3b; }
 
 @media (min-width: 720px) {
   .post-type-archive-projects .project-list {
@@ -3487,7 +3486,8 @@ a {
   text-align: center;
   position: relative;
   height: auto;
-  background-color: #353535; }
+  background: linear-gradient(to bottom, rgba(53, 53, 53, 0.4) 0%, rgba(53, 53, 53, 0.7) 100%), url("../../images/future-background.jpg") no-repeat center;
+  background-size: cover,cover; }
 
 .home .section-header {
   font-family: 'latoblack';
@@ -3515,9 +3515,12 @@ a {
   left: 2px;
   transition: background-color .4s linear;
   font-size: 1.5rem;
+  text-align: center;
   letter-spacing: 2px;
-  text-align: left;
-  padding-left: 0.5rem; }
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  border-bottom: 2px dotted #fff;
+  padding-bottom: 0.5rem; }
   @media (min-width: 720px) {
     .home .project-title {
       bottom: 0;
@@ -3531,7 +3534,7 @@ a {
   position: relative; }
   @media (min-width: 720px) {
     .home .project-image {
-      height: 23vw; } }
+      height: 19vw; } }
   .home .project-image img {
     height: 100%; }
 
@@ -3631,10 +3634,10 @@ a {
   margin: 0 auto; }
   .home .main-button:hover {
     border-radius: 25px;
-    color: #0ade74;
+    color: #fdcd3b;
     width: 18rem;
     letter-spacing: 2px;
-    border: 2px solid #0ade74; }
+    border: 2px solid #fdcd3b; }
 
 .home .about-background {
   padding-top: 3rem; }
@@ -3707,7 +3710,8 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/computer-background.png") no-repeat center;
   background-size: cover,cover;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-bottom: 4rem; }
 
 .home .full-logo-container {
   padding-top: 3rem; }

@@ -35,10 +35,10 @@
         margin:0 auto;
           &:hover{
                 border-radius:25px;
-                color:$main__color;
+                color:$accent__color;
                 width: 18rem;
                 letter-spacing:2px;
-                border:2px solid $main__color;
+                border:2px solid $accent__color;
 
             }
     }
