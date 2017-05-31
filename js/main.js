@@ -35,12 +35,34 @@
         typeSpeed: 40,
         strings: ["Landing<br> Pages ^1000", "Responsive<br> Websites ^1000", "UI <br>Designs ^1000", "Wordpress<br> Themes ^1000"]
      });
+
+     //AOS
+    $('.project-item').attr({
+        'data-aos':'fade-down-right',
+    })
+
+    $('.project-item:first-child').attr('data-aos-delay','200')
+    $('.project-item:nth-child(2)').attr('data-aos-delay','400')
+    $('.project-item:nth-child(3)').attr('data-aos-delay','600')
+    $('.project-item:nth-child(4)').attr('data-aos-delay','800')
+    $('.project-item:nth-child(5)').attr('data-aos-delay','1000')
+    $('.project-item:nth-child(6)').attr('data-aos-delay','1200')
+
+    // $('.project-item').each(function( i ,index){
+    //     var delayNumber = index * 100;
+    //     $(this).attr('data-aos-delay', 'delayNumber')
+    // })
+
+
      
      AOS.init({
       offset: 200,
       duration: 700,
       easing: 'ease-in-out'
     });
+
+
+    //FancyBox
 
     $(".fancybox").fancybox();
 
@@ -151,8 +173,8 @@
 
      //Project Item Attribute Injection
 
-     $('.project-item:even').attr('data-aos','fade-down-right','data-aos-delay','4100');
-     $('.project-item:odd').attr('data-aos','fade-up-left','data-aos-delay','4500');
+   
+    //  $('.project-item:odd').attr('data-aos','fade-up-left','data-aos-delay','4500');
 
 
 })(jQuery)
