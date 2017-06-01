@@ -1,63 +1,62 @@
-.home{
-
-    #page{
-        overflow-x:hidden;
+.home {
+    #page {
+        overflow-x: hidden;
     }
 
-    .fixed-header{
-        ul{
-            @include desktop{
-                font-size:30px;
+    .fixed-header {
+        ul {
+            @include desktop {
+                font-size: 30px;
             }
         }
     }
 
-    .hero-background{
-        background:linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url(../../images/chair-background.jpg);
+    .hero-background {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/chair-background.jpg);
         background-repeat: no-repeat,no-repeat;
         background-size: cover,cover;
         width: 100%;
         height: 100vh;
         position: absolute;
-            @include desktop{
-                background:linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url(../../images/desktop-hero.jpg);
-                background-repeat: no-repeat,no-repeat;
-                background-size: cover,cover;
-            }
+
+        @include desktop {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/desktop-hero.jpg);
+            background-repeat: no-repeat,no-repeat;
+            background-size: cover,cover;
+        }
     }
 
-    .hero-container{
-        width:100%;
+    .hero-container {
+        width: 100%;
         height: 100vh;
-        position:relative;
-            .animation-paragraph-container{
-                position:absolute;
-                top:8rem;
-                z-index:10;
-            }
+        position: relative;
+
+        .animation-paragraph-container {
+            position: absolute;
+            top: 8rem;
+            z-index: 10;
+        }
     }
 
-    .menu-toggle{
-        display:none;
+    .menu-toggle {
+        display: none;
     }
-
 
     //Heading Animation
 
-    .typing-container{
+    .typing-container {
         margin-top: 5.5vw;
         display: flex;
         flex-direction: column;
         width: 100vw;
         align-items: center;
-            @include desktop{
-             
-            }
+
+        @include desktop {}
     }
 
-    .element{
-        @include desktop{
-            max-width:85vw;
+    .element {
+        @include desktop {
+            max-width: 85vw;
         }
     }
 
@@ -66,62 +65,70 @@
         color: #fff;
         font-size: 10vw;
         transform-origin: 50% 70%;
-        text-align:center;
+        text-align: center;
+
         @include main-text-shadow;
-        font-family:'latoblack';
-            @include desktop{
-                font-size:6.5vw;
 
-            }
-    }
+        font-family: 'latoblack';
 
-    .element2{
-        @include desktop{
-            font-size:6vw;
+        @include desktop {
+            font-size: 6.5vw;
         }
     }
 
-    .element2{
+    .element2 {
+        @include desktop {
+            font-size: 6vw;
+        }
+    }
+
+    .element2 {
         display: flex;
         justify-content: center;
-        color:$accent__color;
-        opacity:0;
-        animation:fade-header 2s linear 5s;
-        animation-fill-mode:forwards;
+        color: $accent__color;
+        opacity: 0;
+        animation: fade-header 2s linear 5s;
+        animation-fill-mode: forwards;
     }
 
-    @keyframes fade-header{
-        from{
-            opacity:0;
+    @keyframes fade-header {
+        from {
+            opacity: 0;
         }
-        to{
-            opacity:1;
+
+        to {
+            opacity: 1;
         }
     }
 
-//Work Section
+    //Work Section
 
-    .work-section{
+    .project-video{
+        position:absolute;
+        width:100%;
+        left:0;
+        height:100%;
+    }
+
+    .work-section {
         z-index: 100;
         position: relative;
         text-align: center;
-        position:relative;
-        height:auto;
-        background:linear-gradient( to bottom, rgba(53,53,53,0.4) 0%, rgba(53,53,53,0.7) 100% ),
-        url('../../images/future-background.jpg')no-repeat center;
-        background-size:cover,cover;
+        position: relative;
+        height: auto;
+        background: url("../../images/project-background.jpg") no-repeat center;
+        background-size: cover;
     }
 
-
-    .section-header{
-        font-family:'latoblack';
+    .section-header {
+        font-family: 'latoblack';
         font-size: 3rem;
         margin-top: 0;
-        letter-spacing:2px;
-        text-align:center;
-        position:relative;
-        color: rgba(0,0,0,0.6);
-        text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        color: rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
         margin-bottom: 0;
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
@@ -130,341 +137,362 @@
 
     //Project Slider
 
-
-    .project-title{
+    .project-title {
         text-transform: uppercase;
-        width: 80%;
+        transition:1s ease-in-out;
+        width: 100%;
         margin: 0 auto;
         position: static;
-        bottom:0;
-        font-family:'latoheavy';
+        font-family: 'latoheavy';
         color: $accent__color;
         z-index: 100;
-        left: 2px;
-        transition: background-color .4s linear;
+        transition: all .4s linear;
         font-size: 1.5rem;
+        top: 50%;
+        position: absolute;
         text-align: center;
         letter-spacing: 2px;
         padding-left: 0.5rem;
         margin-top: 0.5rem;
-        border-bottom: 2px dotted #fff;
         padding-bottom: 0.5rem;
-            @include desktop{
-                bottom:0;
-                top:35%;
-                font-size:2vw;
-                font-family:'latoheavy';
-                top:auto;
-            }
-    }
 
-    .project-image{
-        height: 61vw;
-        position:relative;
-            @include desktop{
-                height:19vw;
-            }
-        img{
-            height:100%;
+        @include desktop {
+            top:50%;
+            font-size: 2vw;
+            font-family: 'latoheavy';
         }
     }
 
-    .project-list{ 
+    .project-image {
+        height: 61vw;
+        position: relative;
+        opacity:0.4;
+
+        @include desktop {
+            height: 100%;
+            opacity:0.4
+        }
+
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .project-list {
         overflow-y: hidden;
-            @include desktop{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content:space-around;
-                margin-top:2.5rem;
-            }
-            li{
-                position:relative;
-                    @include desktop{
-                        width:30vw;
-                        border:2px solid #fff;
-                        margin-bottom:1rem;
-                    }
-            }
+
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2.5rem;
+        }
+
+
+        li {
+            position: relative;
+                @include desktop {
+                    width: 30vw;
+                    margin-bottom: 1rem;
+                    box-shadow: 0px 0px 5px 3px #fff;
+                    transition: all 0.4s ease-out;
+                        &:hover {
+                            box-shadow: 0 0 1px 4px #fdcd3b;
+                        }
+                }
+        }
     }
 
-     .project-link{
-        display:none;
-            @include desktop{
-                display: block;
-                position: absolute;
-                bottom:1.5rem;
-                z-index: 300;
-                padding: .5rem;
-                padding-bottom:1rem;
-                text-decoration: none;
-                font-size: 2vw;
-                opacity: 0;
-                left: 20px;
-                text-transform: uppercase;
-                border-bottom: 3px solid white;
-                color:#fff;
-                transition:all 0.4s ease-in-out;
-                font-family:latobold_italic;
-                    &:hover{
-                        padding-bottom:0;
-                        color:$main__color;
-                    }
+    .project-link {
+        display: none;
+
+        @include desktop {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: 300;
+            padding-bottom: 0.4rem;
+            text-decoration: none;
+            font-size: 2vw;
+            opacity: 0;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all .4s ease-in-out;
+            font-family: latobold_italic;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            &:hover {
+                padding-bottom: 0;
+                color: $main__color;
             }
+        }
     }
 
-    .project-item{
-        cursor:pointer;
+    .project-item {
+        cursor: pointer;
         margin: 1rem 0rem;
     }
 
-    .project-item:hover{
-        .project-hover{
-            height:100%;
-                p{
-                    display:block;
-                }
+    .project-item:hover {
+        .project-hover {
+            height: 100%;
+
+            p {
+                display: block;
+            }
         }
-        .project-title{
-            background-color:#fff;
-            left:2px;
-            text-shadow:none;
+
+        .project-title {
+            opacity:0;
+            left: 2px;
+            text-shadow: none;
         }
-        .project-link{
-            opacity:1;
-            transition:all 0.7 ease-in-out;
+
+        .project-link {
+            opacity: 1;
+            transition: all 0.7 ease-in-out;
         }
     }
 
-    .project-hover{
+    .project-hover {
         position: absolute;
         bottom: 0;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         height: 0;
         transition: height 0.4s ease-in-out;
-        width:100%;
-        padding:0 1rem;
-            p{
-                color:#fff;
-                font-family:montserrat_alternatesXLt;
-                display:none;
-                margin-top: 1.5rem;
-                font-size:5vw;
-                    @include desktop{
-                        font-size: 1.3vw;
-                    }
+        width: 100%;
+        padding: 0 1rem;
 
+        p {
+            color: #fff;
+            font-family: montserrat_alternatesXLt;
+            display: none;
+            margin-top: 0.5rem;
+            font-size: 4.5vw;
+
+            @include desktop {
+                font-size: 1.3vw;
             }
+        }
     }
 
-
-   
-
-   .main-button{
-       @include main-button;
-   }
-
+    .main-button {
+        @include main-button;
+    }
 
     //About Section
 
-    .about-background{
-        padding-top:3rem;
+    .about-background {
+        padding-top: 3rem;
     }
 
-    .about-section{
+    .about-section {
         position: relative;
         height: 138vh;
         max-height: 40rem;
         background-color: #353535;
         z-index: -10;
-        background:url("../../images/coffee-background.jpg")no-repeat;
-        background-size:cover;
-        overflow-y:scroll;
-            @include desktop{
-                background:url("../../images/desktop-about-background.jpg")no-repeat;
-                box-sizing: border-box;
-                width: 100%;
-                position: relative;
-                padding: 20px;
-                color: white;
-                text-align: center;
-                height:100vh;
-                    &:after{
-                        position:absolute;
-                        height:100%;
-                        width:100%;
-                        content:"";
-                        background-repeat:no-repeat;
-                        background:#292929;
-                        top:0;
-                        right:0;
-                        bottom:0;
-                        left:0;
-                        transform-origin:top right;
-                        transform:skewY(-20deg);
+        background: url("../../images/coffee-background.jpg") no-repeat;
+        background-size: cover;
+        overflow-y: scroll;
 
-                    }
-                    p{
-                        display:none;
-                    }
-            }
-    }
+        @include desktop {
+            background: url("../../images/desktop-about-background.jpg") no-repeat;
+            box-sizing: border-box;
+            width: 100%;
+            position: relative;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            height: 100vh;
 
-    .desktop-about-text{
-        display:none;
-            @include desktop{
-                display: block;
+            &:after {
                 position: absolute;
-                bottom: 10rem;
+                height: 100%;
+                width: 100%;
+                content: "";
+                background-repeat: no-repeat;
+                background: #292929;
+                top: 0;
                 right: 0;
-                z-index: 200;
-                width: 88vh;
-                margin-right: 1rem;
-                font-family: latoregular;
-                height: 23vw;
-                max-height: 198px;
-                max-width: 555px;
-                margin-bottom:0.5rem;
+                bottom: 0;
+                left: 0;
+                transform-origin: top right;
+                transform: skewY(-20deg);
             }
+
+            p {
+                display: none;
+            }
+        }
     }
 
-  
+    .desktop-about-text {
+        display: none;
 
-    .about-text{
+        @include desktop {
+            display: block;
+            position: absolute;
+            bottom: 10rem;
+            right: 0;
+            z-index: 200;
+            width: 88vh;
+            margin-right: 1rem;
+            font-family: latoregular;
+            height: 23vw;
+            max-height: 198px;
+            max-width: 555px;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .about-text {
         width: 90vw;
         color: #fff;
         font-family: montserratextralight;
         padding: 1rem 0;
         margin: 0 auto;
-        background-color: rgba(0,0,0,.7);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 1rem 1rem;
-            @include desktop{
-                display:none;
-            }
+
+        @include desktop {
+            display: none;
+        }
     }
 
     //Expertise Section
 
-    .expertise-section{
-        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100% ),
-        url('../../images/computer-background.png')no-repeat center;
-        background-size:cover,cover;
-        display:flex;
+    .expertise-section {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/computer-background.png") no-repeat center;
+        background-size: cover,cover;
+        display: flex;
         padding-bottom: 4rem;
     }
 
-    .full-logo-container{
-        padding-top:3rem;
-            @include desktop{
-                max-width: 60vw;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
- 
+    .full-logo-container {
+        padding-top: 3rem;
+
+        @include desktop {
+            max-width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
-    .logo-container{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-            @include desktop{
-                padding: 0 3vw;
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+            padding: 0 3vw;
+        }
+
+
+        i {
+            color: $accent__color;
+            font-size: 4rem;
+        }
+
+        h2 {
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-family: 'latobold';
+            color: #fff;
+
+            @include desktop {
+                font-size: 3vw;
             }
-        i{
-            color:$accent__color;
-            font-size:4rem;
         }
-        h2{
-            margin-top:1rem;
-            text-transform:uppercase;
-            font-family:'latobold';
-            color:#fff;
-                @include desktop{
-                    font-size:3vw;
-                }
-        }
-        p{
+
+        p {
             text-align: center;
-            color:#fff;
+            color: #fff;
             padding: 0 1rem;
-            font-family:montserratextralight;
-                @include desktop{
-                    font-size:2vw;
-                }
+            font-family: montserratextralight;
+
+            @include desktop {
+                font-size: 2vw;
+            }
         }
     }
 
-    .language-container{
-        display:none;
-            @include desktop{
-                display:block;
-                    img{
-                        width:7rem;
-                    }
+    .language-container {
+        display: none;
+
+        @include desktop {
+            display: block;
+
+            img {
+                width: 7rem;
             }
+        }
     }
 
-    .language-container{
-        li{
+    .language-container {
+        li {
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
             margin-bottom: 2.5rem;
             width: 30vw;
             justify-content: space-between;
-                p{
-                    color:#fff;
-                    font-family:latoheavy;
-                    font-size:3vw;
-                    letter-spacing:4px;
-                }
+
+            p {
+                color: #fff;
+                font-family: latoheavy;
+                font-size: 3vw;
+                letter-spacing: 4px;
+            }
         }
     }
 
-    .language-list{
-        margin-top:3rem;
+    .language-list {
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
+    //Contact Section
 
-//Contact Section
-
-
-    .contact-section{
-        background: linear-gradient( to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100% ),
-        url('../../images/abstract-background.jpg')no-repeat center;
-        background-size:cover,cover;
-        height:100vh;
+    .contact-section {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../images/abstract-background.jpg") no-repeat center;
+        background-size: cover,cover;
+        height: 100vh;
     }
 
-    .contact-content-container{
-            p{
-                font-family:'montserratthin';
-                color:#fff;
-                margin-bottom:0;
-                text-align:center;
-                padding:0 1rem;
-                    @include desktop{
-                        font-size:2vw;
-                    }
+    .contact-content-container {
+        p {
+            font-family: 'montserratthin';
+            color: #fff;
+            margin-bottom: 0;
+            text-align: center;
+            padding: 0 1rem;
+
+            @include desktop {
+                font-size: 2vw;
             }
+        }
     }
 
-    .contact-heading{
-        color:$accent__color;;
-        text-align:center;
-        font-family:'latobold';
-        font-size:2rem;
-        margin-top:1.5rem;
-        margin-bottom:1rem;
+    .contact-heading {
+        color: $accent__color;
+        text-align: center;
+        font-family: 'latobold';
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 
-    .contact-button-container{
-        text-align:center;
-        margin-top:10vw;
+    .contact-button-container {
+        text-align: center;
+        margin-top: 10vw;
     }
-    
+}
 
-}//Home Wrapper
+//Home Wrapper

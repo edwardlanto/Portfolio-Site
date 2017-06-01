@@ -1,53 +1,59 @@
-.main-button-container{
+.main-button-container {
     height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#292929;
-    background-size:cover,cover;
-    border-top:2px solid #fff;
-        @include desktop{
-            height:8rem;
-        }
+    background: #292929;
+    background-size: cover,cover;
+    border-top: 2px solid #fff;
+
+    @include desktop {
+        height: 8rem;
+    }
 }
 
-.menu-section{
+.menu-section {
     position: fixed;
     bottom: 0;
     left: 10px;
 }
 
-    .fixed-header{
-        position:fixed;
-        top:0;
-        z-index:5000;
-        display:none;
-            ul{
-                width: 100vw;
-                display: -ms-flexbox;
-                display: flex;
-                height:85px;
-                -ms-flex-pack: distribute;
-                justify-content: space-around;
-                background-color: rgba(0,0,0,0.7);
-                -ms-flex-align: center;
-                align-items: center;
-                font-size: 1rem;
-                font-family:'montserratthin';
-                border-bottom:2px ridged $accent__color;;
-                    a{
-                        color: $accent__color;
-                        border-bottom: 2px solid $accent__color;;
-                        text-decoration: none;
-                        transition:all 0.5s ease-in-out;
-                        padding:10px 0px 20px 0px;
-                            &:hover{
-                                border-bottom-width:20px;
-                                padding:5px;
-                                letter-spacing:10px;
-                                font-size:1.5rem;
+.fixed-header {
 
-                            }
-                    }
+    ul {
+        width: 100vw;
+        display: -ms-flexbox;
+        display: flex;
+        transition:all 1s linear;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 1rem;
+        font-family: 'latoblack';
+        border-bottom: 2px ridged $accent__color;
+        background: hsla(0,0%,100%,.8);
+        height:0%;
+        display:none;
+
+        a {
+            color:#000;
+            text-decoration: none;
+            transition: all .5s ease-in-out;
+            text-transform:uppercase;
+
+            &:hover {
+                border-bottom-width: 20px;
+                padding: 5px;
+                letter-spacing: 10px;
+                font-size: 1.5rem;
             }
+        }
     }
+}
+
+.fixed-header-container {
+    position: fixed;
+    z-index: 5000;
+    background: rgba(255, 255, 255,0.8);
+}

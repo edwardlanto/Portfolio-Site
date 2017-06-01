@@ -53,6 +53,15 @@
     //     $(this).attr('data-aos-delay', 'delayNumber')
     // })
 
+    $('.project-item').hover(function(){
+        $(this).find('.project-image').css({
+            "opacity":"0.8"
+        },1000)
+        $(this).find('.project-title').css({
+            "background":"rgba(0,0,0,0.5)"
+        })
+    })
+
 
      
      AOS.init({
@@ -137,7 +146,8 @@
     //Screen Width 800
 
     function resize() {
-      if ($(window).width() > 720) {
+      if ($(window).width() < 720) {
+          $('.project-video').remove();
       }
 
     }
@@ -150,9 +160,11 @@
         event.preventDefault();
         var y = $(window).scrollTop();
         if(y >= 420){
-            $('.fixed-header').css({"display":"block"})
+            $('.home-list').css({"display":"flex"}).css({
+            "height":'60px'
+            },1000, 'linear')
         }else{
-            $('.fixed-header').css({"display":"none"});
+            $('.home-list').css({"display":"none"});
         }
     })
 

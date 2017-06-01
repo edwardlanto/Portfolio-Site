@@ -9,14 +9,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="fixed-header">
-				<ul class="home-list">
-					<li><a href="#Work">Work</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Expertise">Expertise</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</div>
+			<div class="fixed-header-container">
+				<div class="fixed-header">
+					<ul class="home-list">
+						<li><a href="#Work">Work</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#Expertise">Expertise</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</div><!--fixe-header-->
+			</div><!--fixed-header-container-->
 			<section class="hero-container" data-aos="zoom-in-up" delay="100">
 				<div class="hero-background">
 						<div class="typing-container">
@@ -44,6 +46,9 @@ get_header(); ?>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section" id="Work">
+				<video autoplay class="project-video" loop>
+					<source src="<?php echo get_template_directory_uri();?>/images/corporate-background.mp4" type="video/mp4">
+					</video>
 				<h2 class="section-header">Work</h2>
 				<ul class="project-list">
 					<?php
@@ -52,7 +57,7 @@ get_header(); ?>
                 	<?php 
                     	while ( $loop -> have_posts() ) : $loop -> the_post(); 
                 	?> 
-					<li class="project-item">
+					<li class="project-item" data-aos-once="true">
 						<a href="<?php echo CFS()->get('project_link'); ?>" class="project-link">Link</a>
 						<div class="project-image">
 							<?php the_post_thumbnail('full'); ?>
