@@ -152,13 +152,13 @@ $bar-spacing: 13px;
 						border-bottom:none;
 					}
 					a{
-						color: $main__color;
+						color: $accent__color;
 						text-decoration:none;
 							@include desktop{
 								color:#fff;
 								transition:all 0.4s ease-in-out;
 									&:hover{
-										color:$main__color;
+										column-rule: $accent__color;
 									}
 							}
 					}

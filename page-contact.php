@@ -32,7 +32,7 @@ get_header(); ?>
 						</a>
 					</li>
 					<li>
-						<a href="https://github.com/edwardlanto" class="icon-button pinterest github">
+						<a href="https://github.com/edwardlanto" class="icon-button github">
 							<i class="fa fa-github-square" aria-hidden="true"></i>
 						</a>
 					</li>			

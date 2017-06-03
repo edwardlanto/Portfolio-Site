@@ -12,13 +12,13 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<ul class="social-media-container">
 						<li>
-							<a href="#" class="icon-button twitter">
+							<a href="https://www.linkedin.com/in/edward-lanto-54172513a/" class="icon-button twitter">
 								<i class="fa fa-linkedin" aria-hidden="true"></i>
 								<span></span>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="icon-button facebook">
+							<a href="https://www.facebook.com/edward.lanto" class="icon-button facebook">
 								<i class="fa fa-facebook" aria-hidden="true"></i>
 								<span></span>
 							</a>
@@ -30,7 +30,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="icon-button pinterest github">
+							<a href="https://github.com/edwardlanto" class="icon-button github">
 								<i class="fa fa-github-square" aria-hidden="true"></i>
 								<span></span>
 							</a>

@@ -60,7 +60,7 @@
                 margin:6.5vh;
                     &:hover{
                         background-color:#000;
-                        color:$main__green;
+                        color:$main__color;
                     }
             }
     }
@@ -123,7 +123,7 @@
                 width:80vw;
             }
             label{
-                color:$main__green;
+                color:$main__color;
                 font-size: 23px;
                 text-transform: uppercase;
                 font-family:'montserratmedium';
