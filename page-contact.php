@@ -12,6 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="contact-hero">
 				<a href="<?php echo home_url(); ?>" class="white-logo-container">
+					<p>Home</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/orange-logo.png" class="white-logo"/>
 				</a>
 				<ul class="contact-social-media-container">
@@ -38,7 +39,7 @@ get_header(); ?>
 				</ul>
 				<h1 class="tlt3" data-in-effect="wobble" data-aos="fade-right">Hello</h1>
 				<h3 data-aos="fade-up" class="tlt4">Interested in working with me? Or just want to say ‘Hello’? 
-				Please use the contact form below or send us an email to edwardlanto@hotmail.com I will be in contact with you as soon as we can.
+				Please use the contact form below or send us an email to edwardlanto@hotmail.com. I will be in contact with you as soon as I can.
 				</h3>
 				<div class="button-container">
 					<a href="#Contact">Contact</a>

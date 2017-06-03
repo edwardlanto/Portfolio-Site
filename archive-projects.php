@@ -11,6 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="gallery-hero">
 				<a href="<?php echo home_url(); ?>" class="white-logo-container">
+					<p>Home</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.png" class="white-logo"/>
 				</a>
 				<h1 class="tlt gallery-header" data-in-effect="flipInY">Portfolio</h1>

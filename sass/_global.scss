@@ -34,7 +34,6 @@
         border-bottom: 2px ridged $accent__color;
         background: hsla(0,0%,100%,.8);
         height:0%;
-        display:none;
 
         a {
             color:#000;
@@ -56,6 +55,7 @@
     z-index: 5000;
     background: rgba(255, 255, 255,0.7);
     top:0;
+    height:'80px';
 }
 
 .fixed-header-logo{
@@ -90,3 +90,21 @@
     display:flex;
     justify-content:center;
 }
+
+//    .white-logo{
+//         margin:0;
+//     }
+
+    .white-logo-container{
+        flex-direction: column;
+        align-items: center;
+        text-decoration:none;
+            p{
+                margin:0;
+                font-family:'montserratmedium';
+                text-transform:uppercase;
+                text-decoration:none;
+                color:$accent__color;
+            }
+    }
+

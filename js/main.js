@@ -73,10 +73,6 @@
 
     $(".fancybox").fancybox();
 
-    $(".fancybox:eq(0)").attr("data-caption", "Multipage, Wordpess theme that utilizes custom field suites and custom post types")
-    $(".fancybox:eq(1)").attr("data-caption", "Caption2")
-    $(".fancybox:eq(2)").attr("data-caption", "Caption3")
-
     //Header Animation
 
 
@@ -153,24 +149,20 @@
     resize();   
 
     //Sticky Header
-
+    $('.fixed-header-container').hide();
     $(window).scroll(function(){
-        event.preventDefault();
         var y = $(window).scrollTop();
         if(y >= 420){
-            $('.home-list').css({"display":"flex"}).css({
-            "height":'80px'
-            },1000, 'linear')
+            $('.fixed-header-container').show('1000','swing')
         }else{
-            $('.home-list').css({"display":"none"});
+            $('.fixed-header-container').hide('1000', 'swing');
         }
     })
 
     function checkSubmit(){
         if($('.wpcf7-response-output').hasClass('wpcf7-mail-sent-ok')){
             $('.fa-paper-plane-o').css({"color":"#0ade74"}).addClass('plane-move')
-            setTimeOut(function(){
-                location.reload();
+            setTimeout(function(){
             },2000)
         }
     }
@@ -180,14 +172,6 @@
             checkSubmit();
         }, 2000)
      });
-
-     //Project Item Attribute Injection
-
-   
-    //  $('.project-item:odd').attr('data-aos','fade-up-left','data-aos-delay','4500');
-
-
-    //Video Playback
 
 
 

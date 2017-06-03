@@ -187,25 +187,29 @@
             }
     }
 
+    .white-logo{
+        margin:0;
+    }
+
     //Send Plane animation
 
-    // .plane-move{
-    //     animation:plane 2.5s ease-in-out;
-    //     // animation-fill-mode:forwards;
-    // }
+    .plane-move{
+        animation:plane 2.5s ease-in-out;
+    }
 
-    // @keyframes plane{
-    //     0%{
-    //         transform:translate(0px,0px);
-    //     }
-    //     50%{
-    //         transform:translate(20px,20px);
-    //     }
-    //     100%{
-    //         transform:translate(120vw,-3rem);
-    //         color:#fff;
-    //     }
-    // }
+    @keyframes plane{
+        0%{
+            transform:translate(0px,0px);
+        }
+        50%{
+            transform:translate(20px,-20px);
+        }
+        100%{
+            transform:translate(120vw,-20rem);
+            color:#fff;
+        }
+    }
 
+ 
 
 }//Contact Page Wrapper
