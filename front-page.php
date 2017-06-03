@@ -60,9 +60,9 @@ get_header(); ?>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section" id="Work">
-				<!--<video autoplay class="project-video" loop id="video">-->
-					<!--<source src="<?php echo get_template_directory_uri();?>/images/typing-video.mp4" type="video/mp4">
-					</video>-->
+				<video autoplay class="project-video" loop id="video">
+					<source src="<?php echo get_template_directory_uri();?>/images/typing-video.mp4" type="video/mp4">
+				</video>
 				<h2 class="section-header">Work</h2>
 				<ul class="project-list">
 					<?php
