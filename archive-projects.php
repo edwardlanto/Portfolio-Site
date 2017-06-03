@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="gallery-hero">
-				<a href="<?php echo home_url(); ?>">
+				<a href="<?php echo home_url(); ?>" class="white-logo-container">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.png" class="white-logo"/>
 				</a>
 				<h1 class="tlt gallery-header" data-in-effect="flipInY">Portfolio</h1>

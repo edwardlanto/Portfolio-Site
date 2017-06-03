@@ -11,6 +11,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="contact-hero">
+				<a href="<?php echo home_url(); ?>" class="white-logo-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/orange-logo.png" class="white-logo"/>
+				</a>
 				<ul class="contact-social-media-container">
 					<li>
 						<a href="https://www.linkedin.com/in/edward-lanto-54172513a/" class="icon-button twitter">
