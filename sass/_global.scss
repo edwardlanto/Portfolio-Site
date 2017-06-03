@@ -19,7 +19,6 @@
 }
 
 .fixed-header {
-
     ul {
         width: 100vw;
         display: -ms-flexbox;
@@ -87,24 +86,22 @@
 
 .white-logo-container{
     width:100vw;
-    display:flex;
     justify-content:center;
-}
-
-//    .white-logo{
-//         margin:0;
-//     }
-
-    .white-logo-container{
-        flex-direction: column;
-        align-items: center;
-        text-decoration:none;
+    @include flex-column;
+    align-items: center;
+    text-decoration:none;
+        &:hover{
             p{
-                margin:0;
-                font-family:'montserratmedium';
-                text-transform:uppercase;
-                text-decoration:none;
-                color:$accent__color;
+                color:$main__color;
             }
-    }
+        }
+        p{
+            margin:0;
+            font-family:'montserratmedium';
+            text-transform:uppercase;
+            transition:0.3s linear;
+            text-decoration:none;
+            color:$accent__color;
+        }
+}
 

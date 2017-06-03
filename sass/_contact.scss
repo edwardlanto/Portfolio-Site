@@ -109,9 +109,8 @@
 
     form{
         display: -ms-flexbox;
-        display: flex;
+        @include flex-column;
         -ms-flex-direction: column;
-        flex-direction: column;
         -ms-flex-align: center;
         align-items: flex-start;
         margin-top: 17vw;

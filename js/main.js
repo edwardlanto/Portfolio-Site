@@ -18,7 +18,6 @@
         contain: true
     });
 
-
 //Typed Animation
 
     $(".element").typed({
@@ -40,13 +39,6 @@
     $('.project-item').attr({
         'data-aos':'fade-down-right',
     })
-
-    // $('.project-item:first-child').attr('data-aos-delay','200')
-    // $('.project-item:nth-child(2)').attr('data-aos-delay','400')
-    // $('.project-item:nth-child(3)').attr('data-aos-delay','600')
-    // $('.project-item:nth-child(4)').attr('data-aos-delay','800')
-    // $('.project-item:nth-child(5)').attr('data-aos-delay','1000')
-    // $('.project-item:nth-child(6)').attr('data-aos-delay','1200')
 
     $('.project-item').each(function(index){
         var delayNumber = index * 200;
@@ -78,31 +70,14 @@
 
     $('.tlt').textillate({
         in: {
-
-    // set the delay factor applied to each consecutive character
-        delayScale: 1.5,
-
-        // initialDelay: 20000,
-
-        // set the delay between each character
-        delay: 200,
-
-        // set to true to animate all the characters at the same time
-        sync: false,
-
-        // randomize the character sequence
-        // (note that shuffle doesn't make sense with sync = true)
-        shuffle: false,
-
-        // reverse the character sequence
-        // (note that reverse doesn't make sense with sync = true)
-        reverse: false,
-
-    },
-
-         // set the type of token to animate (available types: 'char' and 'word')
-  type: 'char'
-});
+            delayScale: 1.5,
+            delay: 200,
+            sync: false,
+            shuffle: false,
+            reverse: false,
+        },
+        type: 'char'
+    });
 
     $('.tlt2').textillate({
         initialDelay: 1200,
@@ -140,10 +115,9 @@
     //Screen Width 800
 
     function resize() {
-      if ($(window).width() < 720) {
-          $('.project-video').remove();
-      }
-
+        if ($(window).width() < 720) {
+            $('.project-video').remove();
+        }
     }
 
     resize();   

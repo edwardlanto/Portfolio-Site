@@ -49,5 +49,16 @@
     }
 }
 
+@mixin montserrat-text{
+    font-family: 'montserratextralight', sans-serif;
+    color: #fff;
+    text-align:center;
+}
+
+@mixin flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
 
 

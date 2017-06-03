@@ -651,21 +651,22 @@ big {
 
 .white-logo-container {
   width: 100vw;
+  -ms-flex-pack: center;
+      justify-content: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.white-logo-container {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
   text-decoration: none; }
+  .white-logo-container:hover p {
+    color: #0ade74; }
   .white-logo-container p {
     margin: 0;
     font-family: 'montserratmedium';
     text-transform: uppercase;
+    transition: 0.3s linear;
     text-decoration: none;
     color: #fdcd3b; }
 
@@ -1479,8 +1480,8 @@ textarea {
 .page-template-page-contact form {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-direction: column;
   -ms-flex-align: center;
   align-items: flex-start;
   margin-top: 17vw;
@@ -3773,8 +3774,9 @@ a {
 
 .home .about-text {
   width: 90vw;
-  color: #fff;
   font-family: 'montserratextralight', sans-serif;
+  color: #fff;
+  text-align: center;
   padding: 1rem 0;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -3824,10 +3826,10 @@ a {
       .home .logo-container h2 {
         font-size: 3vw; } }
   .home .logo-container p {
-    text-align: center;
+    font-family: 'montserratextralight', sans-serif;
     color: #fff;
-    padding: 0 1rem;
-    font-family: 'montserratextralight', sans-serif; }
+    text-align: center;
+    padding: 0 1rem; }
     @media (min-width: 720px) {
       .home .logo-container p {
         font-size: 2vw; } }
