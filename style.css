@@ -603,8 +603,8 @@ big {
   justify-content: space-around;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1rem;
-  font-family: 'latoblack';
+  font-size: 0.8rem;
+  font-family: 'latoblack', sans-serif;
   border-bottom: 2px ridged #fdcd3b;
   background: rgba(255, 255, 255, 0.8);
   height: 0%;
@@ -624,6 +624,28 @@ big {
   position: fixed;
   z-index: 5000;
   background: rgba(255, 255, 255, 0.8); }
+
+.fixed-header-logo {
+  width: 50px;
+  height: 50px; }
+  @media (min-width: 720px) {
+    .fixed-header-logo {
+      width: 65px;
+      height: 65px; } }
+
+.white-logo {
+  width: 85px;
+  height: 85px;
+  margin: 10px 0 0 10px;
+  border-radius: 6px;
+  transition: all 0.3s linear; }
+  @media (min-width: 720px) {
+    .white-logo {
+      width: 105px;
+      height: 105px;
+      margin: 30px 0 0 30px; }
+      .white-logo:active {
+        transform: translateY(-20px); } }
 
 .fancybox-enabled {
   overflow: hidden; }
@@ -2997,8 +3019,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin: 0;
   text-align: center;
   color: #fdcd3b;
-  padding-top: 5rem;
-  font-family: 'latobold';
+  padding-top: 0;
+  font-family: 'latobold',sans-serif;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 200;
@@ -3013,7 +3035,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   font-size: 1.3rem;
   padding: 0 1rem;
   text-align: center;
-  font-family: 'latomedium_italic'; }
+  font-family: 'latomedium_italic', sans-serif; }
   @media (min-width: 720px) {
     .post-type-archive-projects .gallery-paragraph {
       font-size: 4vw;
@@ -3024,7 +3046,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       padding-top: 3vh; } }
 
 .post-type-archive-projects .project-title {
-  font-family: 'latobold';
+  font-family: 'latobold', sans-serif;
   color: #fff;
   font-size: 8vw;
   text-align: center;
@@ -3045,7 +3067,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding: 1rem;
   color: #fff;
   letter-spacing: 2px;
-  font-family: 'montserratlight';
+  font-family: 'montserratlight', sans-serif;
   text-align: center; }
   @media (min-width: 720px) {
     .post-type-archive-projects .archive-project-item p {
@@ -3436,7 +3458,7 @@ a {
   display: none; }
 
 .home .typing-container {
-  margin-top: 5.5vw;
+  margin-top: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -3456,7 +3478,7 @@ a {
   transform-origin: 50% 70%;
   text-align: center;
   text-shadow: 0px 0px 3px #205def;
-  font-family: 'latoblack'; }
+  font-family: 'latoblack', sans-serif; }
   @media (min-width: 720px) {
     .home .element, .home .element2 {
       font-size: 6.5vw; } }
@@ -3491,13 +3513,12 @@ a {
   z-index: 100;
   position: relative;
   text-align: center;
-  position: relative;
   height: auto;
   background: url("../../images/project-background.jpg") no-repeat center;
   background-size: cover; }
 
 .home .section-header {
-  font-family: 'latoblack';
+  font-family: 'latoblack', sans-serif;
   font-size: 3rem;
   margin-top: 0;
   letter-spacing: 2px;
@@ -3516,7 +3537,7 @@ a {
   width: 100%;
   margin: 0 auto;
   position: static;
-  font-family: 'latoheavy';
+  font-family: 'latoheavy', sans-serif;
   color: #fdcd3b;
   z-index: 100;
   transition: all .4s linear;
@@ -3532,7 +3553,7 @@ a {
     .home .project-title {
       top: 50%;
       font-size: 2vw;
-      font-family: 'latoheavy'; } }
+      font-family: 'latoheavy', sans-serif; } }
 
 .home .project-image {
   height: 61vw;
@@ -3562,8 +3583,11 @@ a {
       .home .project-list li {
         width: 30vw;
         margin-bottom: 1rem;
-        box-shadow: 0px 0px 5px 3px #fff;
-        transition: all 0.4s ease-out; }
+        box-shadow: 0 0 5px 3px #fff;
+        transition: all .4s ease-out;
+        height: 20vw;
+        max-height: 230px;
+        overflow: hidden; }
         .home .project-list li:hover {
           box-shadow: 0 0 1px 4px #fdcd3b; } }
 
@@ -3582,7 +3606,7 @@ a {
       text-transform: uppercase;
       color: #fff;
       transition: all .4s ease-in-out;
-      font-family: latobold_italic;
+      font-family: 'latobold_italic', sans-serif;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
@@ -3620,7 +3644,7 @@ a {
   padding: 0 1rem; }
   .home .project-hover p {
     color: #fff;
-    font-family: montserrat_alternatesXLt;
+    font-family: 'montserrat_alternatesXLt', sans-serif;
     display: none;
     margin-top: 0.5rem;
     font-size: 4.5vw; }
@@ -3700,7 +3724,7 @@ a {
       z-index: 200;
       width: 88vh;
       margin-right: 1rem;
-      font-family: latoregular;
+      font-family: 'latoregular', sans-serif;
       height: 23vw;
       max-height: 198px;
       max-width: 555px;
@@ -3709,7 +3733,7 @@ a {
 .home .about-text {
   width: 90vw;
   color: #fff;
-  font-family: montserratextralight;
+  font-family: 'montserratextralight', sans-serif;
   padding: 1rem 0;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -3753,7 +3777,7 @@ a {
   .home .logo-container h2 {
     margin-top: 1rem;
     text-transform: uppercase;
-    font-family: 'latobold';
+    font-family: 'latobold', sans-serif;
     color: #fff; }
     @media (min-width: 720px) {
       .home .logo-container h2 {
@@ -3762,7 +3786,7 @@ a {
     text-align: center;
     color: #fff;
     padding: 0 1rem;
-    font-family: montserratextralight; }
+    font-family: 'montserratextralight', sans-serif; }
     @media (min-width: 720px) {
       .home .logo-container p {
         font-size: 2vw; } }
@@ -3788,7 +3812,7 @@ a {
       justify-content: space-between; }
   .home .language-container li p {
     color: #fff;
-    font-family: latoheavy;
+    font-family: 'latoheavy', sans-serif;
     font-size: 3vw;
     letter-spacing: 4px; }
 
@@ -3807,7 +3831,7 @@ a {
   height: 100vh; }
 
 .home .contact-content-container p {
-  font-family: 'montserratthin';
+  font-family: 'montserratthin', sans-serif;
   color: #fff;
   margin-bottom: 0;
   text-align: center;
@@ -3819,7 +3843,7 @@ a {
 .home .contact-heading {
   color: #fdcd3b;
   text-align: center;
-  font-family: 'latobold';
+  font-family: 'latobold', sans-serif;
   font-size: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem; }

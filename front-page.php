@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name:Front Page
  *
  * @package RED_Starter_Theme
  */
@@ -12,43 +12,57 @@ get_header(); ?>
 			<div class="fixed-header-container">
 				<div class="fixed-header">
 					<ul class="home-list">
-						<li><a href="#Work">Work</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Expertise">Expertise</a></li>
-						<li><a href="#Contact">Contact</a></li>
+						<li>
+							<a href="#Work">Work</a>
+						</li>
+						<li>
+							<a href="#About">About</a>
+						</li>
+						<li>
+							<a href="#Top">
+								<img src="<?php echo get_template_directory_uri();?>/images/orange-logo.png" class="fixed-header-logo"/>
+							</a>
+						</li>
+						<li>
+							<a href="#Expertise">Expertise</a>
+						</li>
+						<li>
+							<a href="#Contact">Contact</a>
+						</li>
 					</ul>
 				</div><!--fixe-header-->
 			</div><!--fixed-header-container-->
-			<section class="hero-container" data-aos="zoom-in-up" delay="100">
+			<section class="hero-container" data-aos="zoom-in-up" id="Top">
 				<div class="hero-background">
-						<div class="typing-container">
-							<span class="element"></span>
-							<span class="element2"></span>
-						</div><!--typing-container-->
-						<div class="menu-main-wrapper">
-							<div class="menu-container">
-								<div class="menu-wrapper">
-									<div class="hamburger-menu">
-										<div class="bar"></div><!--empty-bar-->
-									</div><!--hamburger-menu-->
-									<div class="menu-container">
-										<p>Menu</p>
-									</div><!--menu-container-->
-									<ul class="nav-list">
-										<li><a href="#Work">Work</a></li>
-										<li><a href="#About">About</a></li>
-										<li><a href="#Expertise">Expertise</a></li>
-										<li><a href="#Contact">Contact</a></li>
-									</ul>
-								</div><!--menu-wrapper-->
-							</div><!--menu-container-->
-						</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.png" class="white-logo"/>
+					<div class="typing-container">
+						<span class="element"></span>
+						<span class="element2"></span>
+					</div><!--typing-container-->
+					<div class="menu-main-wrapper">
+						<div class="menu-container">
+							<div class="menu-wrapper">
+								<div class="hamburger-menu">
+									<div class="bar"></div><!--empty-bar-->
+								</div><!--hamburger-menu-->
+								<div class="menu-container">
+									<p>Menu</p>
+								</div><!--menu-container-->
+								<ul class="nav-list">
+									<li><a href="#Work">Work</a></li>
+									<li><a href="#About">About</a></li>
+									<li><a href="#Expertise">Expertise</a></li>
+									<li><a href="#Contact">Contact</a></li>
+								</ul>
+							</div><!--menu-wrapper-->
+						</div><!--menu-container-->
+					</div>
 				</div><!--hero-background-->
     		</section>
 			<section class="work-section" id="Work">
-				<video autoplay class="project-video" loop>
-					<source src="<?php echo get_template_directory_uri();?>/images/corporate-background.mp4" type="video/mp4">
-					</video>
+				<!--<video autoplay class="project-video" loop id="video">-->
+					<!--<source src="<?php echo get_template_directory_uri();?>/images/typing-video.mp4" type="video/mp4">
+					</video>-->
 				<h2 class="section-header">Work</h2>
 				<ul class="project-list">
 					<?php
@@ -136,35 +150,35 @@ get_header(); ?>
 					<ul class="language-list">
 						<li>
 							<p class="tlt" data-in-effect="flipInY">HTML5</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/html.png"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/html.png" alt="html-logo"/>
 						</li>
 						<li >
 							<p>CSS</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/css.jpg"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/css.jpg" alt="css-logo"/>
 						</li>
 						<li>
 							<p>Sass</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/sass.png"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/sass.png" alt="sass-logo"/>
 						</li>
 						<li>
 							<p>PHP</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/php.png"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/php.png" alt="php-logo"/>
 						</li>
 						<li>
 							<p>Javascript</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/javascript.png"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/javascript.png" alt="javascript-logo"/>
 						</li>
 						<li>
 							<p>jQuery</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/jquery.gif"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/jquery.gif" alt="jquery-logo"/>
 						</li>
 						<li>
 							<p>Angular</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/angular.svg"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/angular.svg" alt="angular-logo"/>
 						</li>
 						<li>
 							<p>TypeScript</p>
-							<img src="<?php echo get_template_directory_uri();?>/images/typescript.png"/>
+							<img src="<?php echo get_template_directory_uri();?>/images/typescript.png" alt="typescript-logo"/>
 						</li>
 					</ul>
 				</div><!--language-container-->

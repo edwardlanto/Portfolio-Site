@@ -13,8 +13,8 @@
         margin:0;
         text-align:center;
         color:$accent__color;
-        padding-top:5rem;
-        font-family: 'latobold';
+        padding-top:0;
+        font-family: 'latobold',sans-serif;
         text-transform:uppercase;
         font-size: 3rem;
         font-weight: 200;
@@ -30,7 +30,7 @@
         font-size: 1.3rem;
         padding: 0 1rem;
         text-align: center;
-        font-family:'latomedium_italic';
+        font-family:'latomedium_italic', sans-serif;
             @include desktop{
                 font-size: 4vw;
                 padding: 0 1rem;
@@ -42,7 +42,7 @@
     }
 
     .project-title{
-        font-family:'latobold';
+        font-family:'latobold', sans-serif;
         color: #fff;
         font-size: 8vw;
         text-align: center;
@@ -64,7 +64,7 @@
             padding:1rem;
             color: #fff;
             letter-spacing: 2px;
-            font-family:'montserratlight';
+            font-family:'montserratlight', sans-serif;
             text-align:center;
                 @include desktop{
                     word-break:initial;

@@ -41,17 +41,17 @@
         'data-aos':'fade-down-right',
     })
 
-    $('.project-item:first-child').attr('data-aos-delay','200')
-    $('.project-item:nth-child(2)').attr('data-aos-delay','400')
-    $('.project-item:nth-child(3)').attr('data-aos-delay','600')
-    $('.project-item:nth-child(4)').attr('data-aos-delay','800')
-    $('.project-item:nth-child(5)').attr('data-aos-delay','1000')
-    $('.project-item:nth-child(6)').attr('data-aos-delay','1200')
+    // $('.project-item:first-child').attr('data-aos-delay','200')
+    // $('.project-item:nth-child(2)').attr('data-aos-delay','400')
+    // $('.project-item:nth-child(3)').attr('data-aos-delay','600')
+    // $('.project-item:nth-child(4)').attr('data-aos-delay','800')
+    // $('.project-item:nth-child(5)').attr('data-aos-delay','1000')
+    // $('.project-item:nth-child(6)').attr('data-aos-delay','1200')
 
-    // $('.project-item').each(function( i ,index){
-    //     var delayNumber = index * 100;
-    //     $(this).attr('data-aos-delay', 'delayNumber')
-    // })
+    $('.project-item').each(function(index){
+        var delayNumber = index * 200;
+        $(this).attr('data-aos-delay', delayNumber)
+    })
 
     $('.project-item').hover(function(){
         $(this).find('.project-image').css({
@@ -62,9 +62,7 @@
         })
     })
 
-
-     
-     AOS.init({
+    AOS.init({
       offset: 200,
       duration: 700,
       easing: 'ease-in-out'
@@ -161,7 +159,7 @@
         var y = $(window).scrollTop();
         if(y >= 420){
             $('.home-list').css({"display":"flex"}).css({
-            "height":'60px'
+            "height":'80px'
             },1000, 'linear')
         }else{
             $('.home-list').css({"display":"none"});
@@ -187,6 +185,10 @@
 
    
     //  $('.project-item:odd').attr('data-aos','fade-up-left','data-aos-delay','4500');
+
+
+    //Video Playback
+
 
 
 })(jQuery)

@@ -10,6 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="gallery-hero">
+				<a href="<?php echo home_url(); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/white-logo.png" class="white-logo"/>
+				</a>
 				<h1 class="tlt gallery-header" data-in-effect="flipInY">Portfolio</h1>
 				<p class="tlt2 gallery-paragraph" data-in-effect="fadeInLeft">“I strive for two things in design: simplicity and clarity. 
 					Great design is born of those two things.” <span class="author">-Lindon Leader</span></p>
