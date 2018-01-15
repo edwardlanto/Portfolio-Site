@@ -1,4 +1,7 @@
 <?php
+
+//URL Setter
+
 /**
  * RED Starter Theme functions and definitions.
  *
@@ -6,6 +9,10 @@
  *
  * @package RED_Starter_Theme
  */
+
+
+// update_option( 'siteurl', 'http://localhost:8888/portfolio' );
+// update_option( 'home', 'http://localhost:8888/portfolio' );
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
@@ -92,8 +99,6 @@ function portfolio_script() {
 	wp_enqueue_script( 'portfolio-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20130115', true);
 
 	wp_enqueue_script( 'typed-portfolio', get_template_directory_uri() . '/build/js/typed.min.js', array('jquery'), true);
-
-	wp_enqueue_script( 'aos-portfolio', get_template_directory_uri() . '/build/js/aos.min.js', array('jquery'), true);
 
 	wp_enqueue_script( 'fancybox-portfolio', get_template_directory_uri() . '/build/js/jquery.fancybox.min.js', array('jquery'), true);
 

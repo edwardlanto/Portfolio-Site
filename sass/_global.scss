@@ -1,117 +1,23 @@
-.main-button-container {
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #292929;
-    background-size: cover,cover;
-    border-top: 2px solid #fff;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-    @include desktop {
-        height: 8rem;
-    }
+body{
+    background:#f58426;
 }
 
-.menu-section {
-    position: fixed;
-    bottom: 0;
-    left: 10px;
+.element, .element2{
+    color:#fff;
+    font-family:'Open Sans';
 }
 
-.fixed-header {
-    ul {
-        width: 100vw;
-        display: -ms-flexbox;
-        display: flex;
-        transition:all 1s linear;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -ms-flex-align: center;
-        align-items: center;
-        font-size: 0.8rem;
-        font-family: 'latoblack', sans-serif;
-        border-bottom: 2px ridged $accent__color;
-        background: hsla(0,0%,100%,.8);
-        height:0%;
-
-        a {
-            color:#000;
-            text-decoration: none;
-            transition: all .5s ease-in-out;
-            text-transform:uppercase;
-            &:hover {
-                border-bottom-width: 20px;
-                padding: 5px;
-                letter-spacing: 10px;
-                font-size: 1.5rem;
-            }
-        }
-    }
+.typing-container{
+    text-align:center;
 }
 
-.fixed-header-container {
-    position: fixed;
-    z-index: 5000;
-    background: rgba(255, 255, 255,0.7);
-    top:0;
-    height:'80px';
+.element{
+    font-size:4.5vw;
 }
 
-.fixed-header-logo{
-    width:50px;
-    margin-top:3px;
-    height:50px;
-        @include desktop{
-            width:65px;
-            height:65px;
-            margin-top:6px;
-        }
+.element2{
+    font-size:3.7vw;
 }
-
-.white-logo{
-    width: 85px;
-    height:85px;
-    margin: 10px 0 0 10px;
-    border-radius: 6px;
-    transition:all 0.3s linear;
-        @include desktop{
-            width:105px;
-            height:105px;
-            margin:30px 0 0 30px;
-                &:active{
-                    transform:translateY(-20px);
-                }
-        }
-
-}
-
-.white-logo-container{
-    width:100vw;
-    justify-content:center;
-    @include flex-column;
-    align-items: center;
-    text-decoration:none;
-        &:hover{
-            p{
-                color:$main__color;
-            }
-        }
-        p{
-            margin:0;
-            font-family:'montserratmedium';
-            text-transform:uppercase;
-            transition:0.3s linear;
-            text-decoration:none;
-            color:$accent__color;
-        }
-}
-
-//404
-
-.error404{
-    h1{
-        text-align:center;
-        color:$accent__color;
-    }
-}
-

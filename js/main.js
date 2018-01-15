@@ -13,90 +13,32 @@
         $('.nav-list').css({"opacity":"1"}).toggle('slide').css({"display":"inherit"});
 	})
 
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true
-    });
-
 //Typed Animation
 
     $(".element").typed({
         loop: false,
-        backDelay: 500,
-        typeSpeed: 40,
-        strings: ["Hi, I'm Edward. I Develop and build ^1000 "]
+        backDelay: 0,
+        typeSpeed: 10,
+        strings: ["Want 150 with Tangerine?"]
      });
      
      $(".element2").typed({
         loop: true,
-        startDelay:0,
-        backDelay: 500,
+        startDelay:5000,
+        backDelay: 2000,
         typeSpeed: 40,
-        strings: ["Landing<br> Pages ^1000", "Responsive<br> Websites ^1000", "UI <br>Designs ^1000", "Wordpress<br> Themes ^1000"]
+        strings: ["<br/>Get $50 in when you open a Tangerine Bank Account", "<br/>Get $100 when you use Tangerine chequing account as your payroll",]
      });
 
+     AOS.init({
+        offset: 200,
+        duration: 700,
+        easing: 'ease-in-out'
+      });
+  
+
      //AOS
-    $('.project-item').attr({
-        'data-aos':'fade-down-right',
-    })
-
-    $('.project-item').each(function(index){
-        var delayNumber = index * 200;
-        $(this).attr('data-aos-delay', delayNumber)
-    })
-
-    $('.project-item').hover(function(){
-        $(this).find('.project-image').css({
-            "opacity":"0.8"
-        },1000)
-        $(this).find('.project-title').css({
-            "background":"rgba(0,0,0,0.5)"
-        })
-    })
-
-    AOS.init({
-      offset: 200,
-      duration: 700,
-      easing: 'ease-in-out'
-    });
-
-
-    //FancyBox
-
-    $(".fancybox").fancybox();
-
-    //Header Animation
-
-
-    $('.tlt').textillate({
-        in: {
-            delayScale: 1.5,
-            delay: 200,
-            sync: false,
-            shuffle: false,
-            reverse: false,
-        },
-        type: 'char'
-    });
-
-    $('.tlt2').textillate({
-        initialDelay: 1200,
-        delay: 100
-    })
-
-    $('.tlt3').textillate({
-        delay:200
-    })
-
-    $('.tlt4').textillate({
-        loop:false,
-        in:{
-            delay:20,
-            effect: 'fadeInLeftBig',
-            minDisplayTime:10000
-        }
-    })
-
+   
     //Smooth Scroll
 
       $('a[href*="#"]:not([href="#"])').click(function () {
@@ -133,19 +75,6 @@
         }
     })
 
-    function checkSubmit(){
-        if($('.wpcf7-response-output').hasClass('wpcf7-mail-sent-ok')){
-            $('.fa-paper-plane-o').css({"color":"#0ade74"}).addClass('plane-move')
-            setTimeout(function(){
-            },2000)
-        }
-    }
-
-    $('.wpcf7-submit').on('click',function(){
-        setTimeout(function(){
-            checkSubmit();
-        }, 2000)
-     });
 
 
 
